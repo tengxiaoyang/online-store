@@ -1,17 +1,16 @@
 <template>
-  <div class="header">
+  <div class="app_banner">
     <div class="left">
-      <span>西安</span>
-      <img src="https://p0.meituan.net/travelcube/45c79a92755b54adc9dc1c4682b123b3201.png" alt="">
+      <img src="https://p1.meituan.net/travelcube/7264ce9c25de2e464e3acd996fe8ad362803.png" alt="">
     </div>
-    <div class="search_box">
+    <div class="middle">
       <div class="inner">
-        <img src="https://p0.meituan.net/travelcube/99c29829cf1b85d5cdbc76a1bd0b7329814.png" alt="">
-        <span>请输入商家名、品类或者商圈...</span>
+        <span class="title">省钱利器 购物超划算</span>
+        <span class="text">吃喝玩乐尽在美团</span>
       </div>
     </div>
     <div class="right">
-      <img src="https://p0.meituan.net/travelcube/641521461179df7cfb88738dd1ea11ec1031.png" alt="">
+      <div class="button">去APP</div>
     </div>
   </div>
 </template>
@@ -33,61 +32,63 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.header {
+.app_banner {
   width: 100%;
   height: 51px;
-  background: linear-gradient(135deg, #FFD000 0%, #FFBD00 100%);
+  background: #000;
   display: flex;
   align-items: center;
   .left {
-    width: 76px;
+    width: 60px;
     height: 51px;
     display: flex;
     justify-content: center;
     align-items: center;
-    span {
-      display: inline-block;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 15px;
-      margin: 0 5px 0 0;
-    }
     img {
-      width: 8px;
+      width: 36px;
       display: inline-block;
+      margin: 0 7px 0 13px;
     }
   }
-  .search_box {
+  .middle {
     height: 51px;
     flex: 1;
     display: flex;
-    align-items: center;
     .inner {
       width: 100%;
       height: 33px;
-      background: #FFFFFF;
-      border-radius: 11px;
-      display: flex;
-      align-items: center;
-      opacity: 0.9;
-      img {
-        width: 14px;
-        margin: 0 7px 0 14px;
-      }
-      span {
+      margin: 8px 0 0 0;
+      .title {
+        display: block;
         font-size: 13px;
+        color: #fff;
+        font-weight: 400;
+        height: 19px;
+      }
+      .text {
+        display: block;
+        font-size: 12px;
+        color: #fff;
       }
     }
   }
   .right {
-    width: 50px;
+    width: 72px;
     height: 51px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    img {
-      width: 24px;
+    .button {
+      width: 54px;
+      height: 30px;
       display: inline-block;
+      border-radius: 7px;
+      margin: 0 0 0 2px;
+      background: linear-gradient(135deg, #FFD000 0%, #FFBD00 100%);
+      font-size: 12px;
+      font-weight: 500;
+      text-align: center;
+      line-height: 31px;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     }
   }
 }
