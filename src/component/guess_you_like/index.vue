@@ -323,10 +323,10 @@ export default {
   padding: 0 0 0 10px;
   .title {
     width: 100%;
-    height: 41px;
+    height: 42px;
     font-size: 17px;
     font-weight: 400;
-    line-height: 41px;  
+    line-height: 42px;  
     border-bottom: 1px solid #DDD8CE;
   }
   .item {
@@ -385,6 +385,7 @@ export default {
             font-weight: 400;
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
             color: #f60;
+            line-height: 13px;
           }
         }
         .counter_price {
@@ -397,25 +398,28 @@ export default {
             font-weight: 400;
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
             color: #666;
+            line-height: 13px;
           }
           .num {
             font-size: 12px;
             font-weight: 400;
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
             color: #666;
+            line-height: 13px;
           }
           .cny {
             font-size: 12px;
             font-weight: 400;
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
             color: #666;
+            line-height: 13px;
           }
         }
         .sold {
           font-size: 12px;
           font-weight: 400;
           font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-          line-height: 21px;
+          line-height: 20px;
           flex: 1;
           text-align: end;
           color: #666;
