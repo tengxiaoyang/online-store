@@ -80,22 +80,22 @@ export default {
           sold: "224290"
         },
         {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
-          sold: "199313"
+          id: 6,
+          img: "https://p0.meituan.net/200.0/dpmerchantpic/5c1a221ee820e7c4466cbbcedddd55d74824145.jpg",
+          name: "哆啦乐图",
+          place: "[钟楼/鼓楼]100币套餐",
+          price: "80",
+          counter_price: "100",
+          sold: "35431"
         },
         {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
-          sold: "199313"
+          id: 7,
+          img: "http://p0.meituan.net/200.0/deal/5e3fce0b76bc01dc2e7c95fef9b9c602161902.jpg@269_0_1080_1080a%7C267h_267w_2e_90Q",
+          name: "和谐港烧烤火锅海鲜自助",
+          place: "[小寨]单人自助餐",
+          price: "78",
+          counter_price: "99",
+          sold: "304912"
         },
         {
           id: 1,
