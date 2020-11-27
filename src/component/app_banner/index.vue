@@ -69,6 +69,8 @@ export default {
         display: block;
         font-size: 12px;
         color: #fff;
+        transform: scale(0.95);
+        transform-origin: 0 0;
       }
     }
   }
