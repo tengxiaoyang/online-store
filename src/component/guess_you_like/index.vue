@@ -345,10 +345,11 @@ export default {
     }
     .right {
       flex: 1;
-      padding: 0 9px 0 9px;
+      padding: 0 10px 0 9px;
       .name {
         font-size: 15px;
         font-weight: 400;
+        margin: 1px 0 0 1px;
       }
       .place {
         font-size: 12px;
@@ -379,6 +380,7 @@ export default {
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
             line-height: 17px;
             color: #f60;
+            margin: 0 0 0 1px;
           }
           .text {
             font-size: 12px;
@@ -392,7 +394,7 @@ export default {
           display: flex;
           position: relative;
           align-items: flex-end;
-          margin: 0 0 0 5px;
+          margin: 0 0 0 4px;
           .text {
             font-size: 12px;
             font-weight: 400;
