@@ -44,7 +44,7 @@ export default {
           img: require("../../../public/static/img/leisure.png"),
           img_style: "width: 73%; height: 73%;",
           style: "background: #fed030;",
-          name: "休闲美食"
+          name: "休闲娱乐"
         },
         {
           id: 5,
@@ -104,6 +104,7 @@ export default {
   width: 100%;
   height: 165px;
   background: #fff;
+  padding: 0 0 2px 0;
   .icon {
     width: 20%;
     height: 50%;

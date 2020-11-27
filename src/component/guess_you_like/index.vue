@@ -326,7 +326,7 @@ export default {
     height: 42px;
     font-size: 17px;
     font-weight: 400;
-    line-height: 42px;  
+    line-height: 44px; 
     border-bottom: 1px solid #DDD8CE;
   }
   .item {
@@ -337,6 +337,8 @@ export default {
     .left {
       width: 90px;
       height: 82px;
+      position: relative;
+      bottom: 1px;
       img {
         object-fit: cover;
         width: 100%;
@@ -355,7 +357,8 @@ export default {
         font-size: 12px;
         font-weight: 400;
         color: #666;
-        margin: 4px 0 0 0;
+        margin: 4px 0 0 1px;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
         display: -webkit-box;
         /* -webkit-box-orient: vertical; */
         /*! autoprefixer: off */
