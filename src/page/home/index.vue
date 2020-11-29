@@ -23,9 +23,9 @@
 
 <script>
 import HttpClient from "../../config/ajax.js";
-import AppBanner from "../../component/app_banner";
-import Menu from "../../component/menu";
-import GuessYouLike from "../../component/guess_you_like";
+import AppBanner from "../../component/AppBanner";
+import Menu from "../../component/Menu";
+import GuessYouLike from "../../component/GuessYouLike";
 export default {
   components: {
     AppBanner,
