@@ -136,12 +136,134 @@ export default {
           type: "orange"
         },
         {
+          id: 12,
+          img: "https://p1.meituan.net/200.0/dpmerchantpic/602d145ef6d704d00262c79431aaa761111877.jpg",
+          name: "盼盼日系美甲美睫半永久",
+          place: "[2店通用]【超值人气】手部纯色/跳色/小水钻",
+          price: "50",
+          counter_price: "减25元",
+          sold: "2742",
+          type: "orange"
+        },
+        {
+          id: 13,
+          img: "https://p0.meituan.net/200.0/dpmerchantpic/56d151429ad603edb6c12189db96f40626470.jpg",
+          name: "仁元棠推拿馆",
+          place: "[丈八]《臻享》胃胀嗳气专项调理",
+          price: "168",
+          counter_price: "门市价:216元",
+          sold: "415"
+        },
+        {
+          id: 14,
+          img: "http://p0.meituan.net/200.0/dpdeal/08439ef0f74d588a18bccfdf61ebc5b5391955.png",
+          name: "PL hair salon无痕接发",
+          place: "[2店通用]品质烫染2选一含护理(你不满意我买单)",
+          price: "388",
+          counter_price: "减8元",
+          sold: "778",
+          type: "orange"
+        },
+        {
+          id: 15,
+          img: "http://p0.meituan.net/200.0/dpdeal/beb56c6fe38225e56c61ffe8d75c76db437877.jpg",
+          name: "梦想纹身刺青工作室",
+          place: "[未央路沿线]单人小图案套餐",
+          price: "100",
+          counter_price: "门市价:499元",
+          sold: "661"
+        },
+        {
+          id: 16,
+          img: "https://p0.meituan.net/200.0/merchantpic/4a3c51e5da98aabf202af2c3dea70b49276033.jpg",
+          name: "天香丽美甲美睫化妆",
+          place: "[4店通用]进口水貂毛 睫毛嫁接/种睫毛 不限密度和款式",
+          price: "198",
+          counter_price: "减40元",
+          sold: "579",
+          type: "orange"
+        },
+        {
+          id: 17,
+          img: "http://p0.meituan.net/200.0/deal/__44275781__5150758.jpg",
+          name: "顶牛兰州牛肉拉面",
+          place: "[金花路沿线]拉面套餐，建议单人使用",
+          price: "9.88",
+          counter_price: "门市价:12元",
+          sold: "156623"
+        },
+        {
+          id: 18,
+          img: "http://p0.meituan.net/200.0/dpdeal/8cae091171edbab352f8278b25dc4186790625.jpg",
+          name: "LilyTime专业美甲美睫半永久皮肤管理",
+          place: "[2店通用]【人气】ins风精致美甲造型套餐",
+          price: "89",
+          counter_price: "减30元",
+          sold: "3920",
+          type: "orange"
+        },
+        {
+          id: 19,
+          img: "http://p0.meituan.net/200.0/dpdeal/596c1d5b6e43890c0c546b3fe4d77bf0205959.png",
+          name: "磨磨脱逆龄时光美学中心",
+          place: "[2店通用]单人比基尼上/侧三次套餐2选1",
+          price: "129",
+          counter_price: "减60元",
+          sold: "62",
+          type: "orange"
+        },
+        {
+          id: 20,
+          img: "http://p0.meituan.net/200.0/deal/e812ae993fe8c37166b70cdd6f9b39a148507.jpg@120_0_400_400a%7C267h_267w_2e_100q",
+          name: "吸血鬼猫咪餐厅",
+          place: "[小寨]3人牛排套餐，包间免费",
+          price: "178",
+          counter_price: "门市价:578元",
+          sold: "1009"
+        },
+        {
+          id: 21,
+          img: "http://p1.meituan.net/200.0/deal/d57b348e3e4b2ba6d401cd700da0e450171479.jpg@525_0_1617_1617a%7C267h_267w_2e_90Q",
+          name: "一只酸奶牛",
+          place: "[西安等]紫米露系列3选1",
+          price: "10.8",
+          counter_price: "门市价:12元",
+          sold: "583555"
+        },
+        {
+          id: 22,
+          img: "http://p0.meituan.net/200.0/dpdeal/08ebd2bf79e4fe927041f25ef45e6d79173510.jpg",
+          name: "静心美容养生全国连锁",
+          place: "[4店通用]单人特色面部水疗+淋巴调理+面膜",
+          price: "69.9",
+          counter_price: "门市价:298元",
+          sold: "1381"
+        },
+        {
+          id: 23,
+          img: "http://p1.meituan.net/200.0/deal/3874c41cb8756487564c1e25263862e8121539.jpg@174_0_586_586a%7C267h_267w_2e_90Q",
+          name: "迈德思客",
+          place: "[西安等]香辣鸡腿堡套餐，建议单人使用",
+          price: "15",
+          counter_price: "门市价:21.5元",
+          sold: "744723"
+        },
+        {
+          id: 24,
+          img: "http://p0.meituan.net/200.0/dpdeal/b413aae654c785481fbc63bfde1be8c1250142.jpg",
+          name: "苗谣姿然专业祛痘旗舰店",
+          place: "[小寨]单人淡化痘印/深层补水/去黑头深层清洁3选1套餐",
+          price: "68",
+          counter_price: "门市价:498元",
+          sold: "204"
+        },
+        {
           id: 1,
           img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
           name: "鑫海汇海鲜烤肉火锅自助",
           place: "[立丰国际]单人自助晚餐",
           price: "66.9",
-          counter_price: "86",
+          counter_price: "门市价:216元",
           sold: "199313"
         },
         {
@@ -150,7 +272,7 @@ export default {
           name: "鑫海汇海鲜烤肉火锅自助",
           place: "[立丰国际]单人自助晚餐",
           price: "66.9",
-          counter_price: "86",
+          counter_price: "门市价:216元",
           sold: "199313"
         },
         {
@@ -159,7 +281,7 @@ export default {
           name: "鑫海汇海鲜烤肉火锅自助",
           place: "[立丰国际]单人自助晚餐",
           price: "66.9",
-          counter_price: "86",
+          counter_price: "门市价:216元",
           sold: "199313"
         },
         {
@@ -168,7 +290,7 @@ export default {
           name: "鑫海汇海鲜烤肉火锅自助",
           place: "[立丰国际]单人自助晚餐",
           price: "66.9",
-          counter_price: "86",
+          counter_price: "门市价:216元",
           sold: "199313"
         },
         {
@@ -177,7 +299,7 @@ export default {
           name: "鑫海汇海鲜烤肉火锅自助",
           place: "[立丰国际]单人自助晚餐",
           price: "66.9",
-          counter_price: "86",
+          counter_price: "门市价:216元",
           sold: "199313"
         },
         {
@@ -186,124 +308,7 @@ export default {
           name: "鑫海汇海鲜烤肉火锅自助",
           place: "[立丰国际]单人自助晚餐",
           price: "66.9",
-          counter_price: "86",
-          sold: "199313"
-        },
-        {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
-          sold: "199313"
-        },
-        {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
-          sold: "199313"
-        },
-        {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
-          sold: "199313"
-        },
-        {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
-          sold: "199313"
-        },
-        {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
-          sold: "199313"
-        },
-        {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
-          sold: "199313"
-        },
-        {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
-          sold: "199313"
-        },
-        {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
-          sold: "199313"
-        },
-        {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
-          sold: "199313"
-        },
-        {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
-          sold: "199313"
-        },
-        {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
-          sold: "199313"
-        },
-        {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
-          sold: "199313"
-        },
-        {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "86",
+          counter_price: "门市价:216元",
           sold: "199313"
         }
       ]
