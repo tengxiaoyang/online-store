@@ -258,58 +258,59 @@ export default {
           sold: "204"
         },
         {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "门市价:216元",
-          sold: "199313"
+          id: 25,
+          img: "http://p0.meituan.net/200.0/deal/f0e987f7be1302ab6aa0e29c656bb44c36518.jpg",
+          name: "百富烤霸",
+          place: "[西安等]烤鸡堡单人餐，提供免费WiFi",
+          price: "19",
+          counter_price: "门市价:41.5元",
+          sold: "283118"
         },
         {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "门市价:216元",
-          sold: "199313"
+          id: 26,
+          img: "https://p0.meituan.net/200.0/merchantpic/093af73a31fc95dfcf8fd68f7d1fd56c315199.jpg",
+          name: "铭雕·专业纹身店",
+          place: "[2店通用]【高端定制】60*60mm精致纹身",
+          price: "198",
+          counter_price: "门市价:3677元",
+          sold: "585"
         },
         {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "门市价:216元",
-          sold: "199313"
+          id: 27,
+          img: "http://p0.meituan.net/200.0/dpdeal/5e4a1d594e904660ea8edfea6ac68e0e3238988.jpg",
+          name: "福灸堂艾灸推拿养生馆",
+          place: "[二府庄]9选1艾灸+推拿+头疗体验套餐",
+          price: "98",
+          counter_price: "门市价:128元",
+          sold: "803"
         },
         {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "门市价:216元",
-          sold: "199313"
+          id: 28,
+          img: "https://p1.meituan.net/200.0/dpmerchantpic/c3c6b0631af6a5c1d4cc32a2652c985c108844.jpg",
+          name: "依依专业脱毛连锁机构",
+          place: "[西安等]单人双腋下脱毛",
+          price: "2",
+          counter_price: "门市价:400元",
+          sold: "6118"
         },
         {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "门市价:216元",
-          sold: "199313"
+          id: 29,
+          img: "http://p0.meituan.net/200.0/deal/c6db2cb3359fa6313dc5a5c979362ea469968.jpg@133_0_533_533a%7C267h_267w_2e_90Q",
+          name: "抚小鲜蒸汽石锅鱼",
+          place: "[5店通用]100元代金券1张，可叠加",
+          price: "95",
+          counter_price: "门市价:100元",
+          sold: "51361"
         },
         {
-          id: 1,
-          img: "http://p0.meituan.net/200.0/deal/6139a65f7ca3280b3c77eb765b92522834640.jpg",
-          name: "鑫海汇海鲜烤肉火锅自助",
-          place: "[立丰国际]单人自助晚餐",
-          price: "66.9",
-          counter_price: "门市价:216元",
-          sold: "199313"
+          id: 30,
+          img: "http://p0.meituan.net/200.0/dpdeal/4c770e6d0a65436603754a92337dc24d157729.jpg",
+          name: "Best形象照完美证件照",
+          place: "[省体育场]个人形象照",
+          price: "118",
+          counter_price: "品牌新用户减4.99元",
+          sold: "2135",
+          type: "orange"
         }
       ]
     }
