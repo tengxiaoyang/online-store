@@ -513,7 +513,7 @@ export default {
   }
 }
 .footer {
-  padding: 10px;
+  padding: 15px 10px;
   background: #fff;
   .bar {
     display: flex;
