@@ -19,11 +19,11 @@
     <Menu></Menu>
     <div class="guess_you_like">
       <div class="title">猜你喜欢</div>
-      <GuessYouLike  
+      <!-- <GuessYouLike  
         v-for="(guess_content_item, guess_content_index) of guess_content" 
         :key="guess_content_index"
         :guess_content="guess_content_item"
-      ></GuessYouLike>
+      ></GuessYouLike> -->
       <div class="see_all_deals">
         <span class="text">查看全部团购</span>
         <div class="arrow"></div>
@@ -39,9 +39,27 @@
           <a href="">西安</a>
         </div>
       </div>
-      <div class="nav"></div>
-      <div class="links"></div>
-      <div class="copyright"></div>
+      <div class="nav">
+        <div class="return_home">首页</div>
+        <div class="item">我的</div>
+        <div class="item">美团下载</div>
+        <div class="item">电脑版</div>
+        <div class="item">帮助</div>
+      </div>
+      <div class="links">
+        <span>友情链接：</span>
+        <a :href="item.link" 
+          v-for="(item, index) of links_content" 
+          :key="index"
+        >{{item.name}}</a>
+      </div>
+      <div class="copyright">
+        <div class="hr"></div>
+        <span class="text">
+          ©2020 美团网 
+          <a href="http://www.beian.miit.gov.cn/" target="_blank">京ICP证070791号</a>
+        </span>
+      </div>
     </div>
   </div>
 </template>
@@ -339,6 +357,40 @@ export default {
           sold: "2135",
           type: "orange"
         }
+      ],
+      links_content: [
+        {
+          name: "猫眼电影",
+          link: "http://m.maoyan.com/?channel=touch_group"
+        },
+        {
+          name: "大众点评",
+          link: "http://m.dianping.com/"
+        },
+        {
+          name: "美团旅行",
+          link: "https://i.meituan.com/awp/hfe/hotel-fe-itower_awp/journey/guide-download/index.html?refer_source=yqlj"
+        },
+        {
+          name: "榛果民宿",
+          link: "http://i.zhenguo.com/"
+        },
+        {
+          name: "大众点评下载",
+          link: "http://evt.dianping.com/synthesislink/9496.html"
+        },
+        {
+          name: "美团收银官网",
+          link: "https://shouyin.meituan.com/?utm_source=inner&utm_medium=mti"
+        },
+        {
+          name: "美团大学·餐饮学院",
+          link: "https://xue.meituan.com/?from=mt0"
+        },
+        {
+          name: "快驴进货商家合作",
+          link: "https://www.kuailvzaixian.com/"
+        }
       ]
     }
   },
@@ -453,40 +505,95 @@ export default {
 }
 .footer {
   padding: 10px;
-  border: 1px solid #000;
   background: #fff;
   .bar {
-    border: 1px solid #000;
     display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    color: #222;
+    font-family: PingFangSC-Medium;
+    align-items: center;
+    padding: 0 14px 0 8px;
+    margin: 0 0 28px 0;
     .sign_in {
-      border: 1px solid #000;
       background: linear-gradient(135deg, #FFD000 0%, #FFBD00 100%);
+      width: 55px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      border-radius: 5px;
+      margin: 0 6px;
     }
     .sign_up {
-      border: 1px solid #000;
       background: linear-gradient(135deg, #FFD000 0%, #FFBD00 100%);
+      width: 55px;
+      height: 28px;
+      line-height: 28px;
+      text-align: center;
+      border-radius: 5px;
+      margin: 0 6px;
     }
     .city {
       flex: 1;
       display: flex;
-      border: 1px solid #000;
       justify-content: flex-end;
+      height: 22px;
       span {
-        border: 1px solid #000;
+        margin: 0 8px 0 0;
       }
       img {
-        border: 1px solid #000;
+        object-fit: contain;
+        width: 12px;
       }
       a {
-        border: 1px solid #000;
+        margin: 0 0 0 4px;
+        color: #222;
+        font-weight: 400;
       }
     }
   }
   .nav {
-    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .return_home {
+      font-size: 12px;
+      font-weight: 400;
+      color: #fe8c00;
+      // padding: 0 19px;
+      flex: 1;
+      text-align: center;
+    }
+    .item {
+      font-size: 12px;
+      font-weight: 400;
+      color: #fe8c00;
+      border-left: 1px solid #666;
+      // padding: 0 19px;
+      flex: 1;
+      text-align: center;
+      height: 12px;
+      line-height: 12px;
+    }
   }
   .links {
-    border: 1px solid #000;
+    margin: 16px 9px;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    span {
+      font-weight: 400;
+      margin: 0 -20px 0 0;
+      color: #646464;
+    }
+    a {
+      font-weight: 400;
+      padding: 0 0 0 19px;
+      display: inline-block;
+      transform: scale(0.95);
+      transform-origin: 0 0;
+      color: #646464;
+    }
   }
   .copyright {
     border: 1px solid #000;
