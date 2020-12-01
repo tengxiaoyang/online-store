@@ -2,7 +2,7 @@
   <div class="home_container">
     <div class="header">
       <div class="left">
-        <span>西安</span>
+        <span>{{selected_city}}</span>
         <img src="https://p0.meituan.net/travelcube/45c79a92755b54adc9dc1c4682b123b3201.png" alt="">
       </div>
       <div class="search_box">
@@ -19,11 +19,11 @@
     <Menu></Menu>
     <div class="guess_you_like">
       <div class="title">猜你喜欢</div>
-      <!-- <GuessYouLike  
+      <GuessYouLike  
         v-for="(guess_content_item, guess_content_index) of guess_content" 
         :key="guess_content_index"
         :guess_content="guess_content_item"
-      ></GuessYouLike> -->
+      ></GuessYouLike>
       <div class="see_all_deals">
         <span class="text">查看全部团购</span>
         <div class="arrow"></div>
@@ -36,7 +36,7 @@
         <div class="city">
           <span>城市:</span>
           <img src="https://p1.meituan.net/travelcube/c6c04160817d530ecddf9f86b158106e2032.png" alt="">
-          <a href="">西安</a>
+          <a href="">{{selected_city}}</a>
         </div>
       </div>
       <div class="nav">
@@ -78,6 +78,7 @@ export default {
   name: 'home',
   data() {
     return {
+      selected_city: "西安",
       guess_content: [
         {
           id: 1,
@@ -431,6 +432,10 @@ export default {
       display: inline-block;
     }
   }
+  .left:active {
+    background: #FFD000;
+    filter: brightness(90%);
+  }
   .search_box {
     height: 51px;
     flex: 1;
@@ -463,6 +468,10 @@ export default {
       width: 24px;
       display: inline-block;
     }
+  }
+  .right:active {
+    background: #FFD000;
+    filter: brightness(90%);
   }
 }
 .guess_you_like {
@@ -563,6 +572,8 @@ export default {
       // padding: 0 19px;
       flex: 1;
       text-align: center;
+      transform: scale(0.95);
+      transform-origin: 0 0;
     }
     .item {
       font-size: 12px;
@@ -574,10 +585,12 @@ export default {
       text-align: center;
       height: 12px;
       line-height: 12px;
+      transform: scale(0.95);
+      transform-origin: 0 0;
     }
   }
   .links {
-    margin: 16px 9px;
+    margin: 17px 9px;
     font-size: 12px;
     font-weight: 400;
     text-align: center;
@@ -596,7 +609,31 @@ export default {
     }
   }
   .copyright {
-    border: 1px solid #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .hr {
+      border-top: 1px solid #999;
+      position: absolute;
+      width: 170%;
+      top: 50%;
+      transform: scale(0.6);
+      transform-origin: 50% 50%;
+    }
+    .text {
+      font-size: 12px;
+      transform: scale(0.95);
+      transform-origin: 0 0;
+      font-weight: 400;
+      color: #999;
+      padding: 0 15px;
+      background: #fff;
+      a {
+        font-weight: 400;
+        color: #999;
+      }
+    }
   }
 }
 </style>
