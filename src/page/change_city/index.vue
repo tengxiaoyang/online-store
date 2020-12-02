@@ -30,11 +30,6 @@
     <div class="recently_visited block">
       <span>最近访问</span>
       <div class="inner">
-        <el-col :span="6">
-          <div class="grid-content initial">
-            A
-          </div>
-        </el-col>
         <el-col :span="6"
           v-for="(item, index) of recently_visited" 
           :key="index"
@@ -60,15 +55,13 @@
     </div>
     <div class="all_cities block">
       <span>全部城市</span>
-      <div class="inner capital">
-        <el-col :span="6"
+      <div class="capital_inner">
+        <div class="grid-content"
           v-for="(item, index) of capital_of_all_cities" 
           :key="index"
         >
-          <div class="grid-content">
-            {{item.name}}
-          </div>
-        </el-col>
+          {{item.name}}
+        </div>
       </div>
       <div class="inner">
         <el-col :span="6">
@@ -96,88 +89,19 @@ export default {
     return {
       recently_visited: [
         {
+          name: "杭州"
+        },
+        {
+          name: "武汉"
+        },
+        {
+          name: "深圳"
+        },
+        {
+          name: "北京"
+        },
+        {
           name: "上海"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "西安123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
         },
         {
           name: "西安"
@@ -185,180 +109,105 @@ export default {
       ],
       popular_cities: [
         {
+          name: "北京"
+        },
+        {
           name: "上海"
         },
         {
-          name: "西安"
+          name: "广州"
+        },
+        {
+          name: "深圳"
+        },
+        {
+          name: "天津"
         },
         {
           name: "西安"
         },
         {
-          name: "西安"
+          name: "重庆"
         },
         {
-          name: "西安123"
+          name: "杭州"
         },
         {
-          name: "西安"
+          name: "南京"
         },
         {
-          name: "西安"
+          name: "武汉"
         },
         {
-          name: "西安"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
+          name: "成都"
         }
       ],
       capital_of_all_cities: [
         {
-          name: "上海"
+          name: "A"
         },
         {
-          name: "西安"
+          name: "B"
         },
         {
-          name: "西安"
+          name: "C"
         },
         {
-          name: "西安"
+          name: "D"
         },
         {
-          name: "西安123"
+          name: "E"
         },
         {
-          name: "西安"
+          name: "F"
         },
         {
-          name: "西安"
+          name: "G"
         },
         {
-          name: "西安"
+          name: "H"
         },
         {
-          name: "西安"
+          name: "J"
         },
         {
-          name: "西安"
+          name: "K"
         },
         {
-          name: "西安"
+          name: "L"
         },
         {
-          name: "123"
+          name: "M"
         },
         {
-          name: "西安"
+          name: "N"
         },
         {
-          name: "123"
+          name: "P"
         },
         {
-          name: "西安"
+          name: "Q"
         },
         {
-          name: "123"
+          name: "R"
         },
         {
-          name: "西安"
+          name: "S"
         },
         {
-          name: "123"
+          name: "T"
         },
         {
-          name: "西安"
+          name: "W"
         },
         {
-          name: "123"
+          name: "X"
         },
         {
-          name: "西安"
+          name: "Y"
         },
         {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
+          name: "Z"
         }
       ],
       all_cities: [
@@ -588,8 +437,23 @@ export default {
 .recently_visited span {
   padding: 10px 0 0 0;
 }
-.all_cities span {
-  padding: 10px 0 0 0;
+.all_cities {
+  span {
+    padding: 10px 0 0 0;
+  }
+  .capital_inner {
+    margin: 0 10px 0 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #fff;
+    // background: linear-gradient(90deg, rgba(221, 216, 206, 0.5) 1px, rgba(255, 255, 255, 0.5) 1px), linear-gradient(rgba(221, 216, 206, 1) 1px, rgba(255, 255, 255, 1) 1px);
+    // background-size: calc(20% - 0.3px) 40px;
+    .grid-content {
+      width: 20%;
+      float: left;
+      color: #FE8C00;
+    }
+  }
 }
 .grid-content {
   min-height: 40px;
@@ -611,6 +475,9 @@ export default {
   font-size: 40px;
   font-weight: 400;
   color: #B7B7B7;
+}
+.initial:active {
+  background: #fff;
 }
 
 </style>
