@@ -78,7 +78,7 @@ export default {
   name: 'home',
   data() {
     return {
-      selected_city: "西安",
+      // selected_city: "西安",
       guess_content: [
         {
           id: 1,
@@ -394,6 +394,11 @@ export default {
         }
       ]
     }
+  },
+  computed: {
+    selected_city() {
+      return this.$store.state.SelectedCity
+    },
   },
   methods: {
     route_to(e) {

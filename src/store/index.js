@@ -6,7 +6,8 @@ import actions from './action'
 Vue.use(Vuex)
 
 const state = {
-	num: 0
+	// num: 0,
+	SelectedCity: "西安",
 }
 
 export default new Vuex.Store({

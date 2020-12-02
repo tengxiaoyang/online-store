@@ -1,6 +1,5 @@
 <template>
   <div class="change_city">
-    
     <div class="header">
       <div class="left" @click="route_to('/')">
         <img src="https://p1.meituan.net/travelcube/53361fd0bb6b333e779377789a8d669e531.png" alt="">
@@ -11,25 +10,56 @@
         </div>
       </div>
       <div class="right">
-        <div class="return_home">
+        <div class="return_home" @click="route_to('/')">
           <img src="https://p1.meituan.net/travelcube/142ba119b889881105236ef57446e6bf866.png" alt="">
         </div>
-        <div class="search">
+        <div class="search" @click="route_to('search')">
           <img src="https://p0.meituan.net/travelcube/4b45dc09c35f9175498345f8672d08991022.png" alt="">
         </div>
       </div>
     </div>
-    <el-row>
-      <el-col :span="6"><div class="initial grid-content"></div></el-col>
-      <el-col :span="6"><div class="grid-content"></div></el-col>
-      <el-col :span="6"><div class="grid-content"></div></el-col>
-      <el-col :span="6"><div class="grid-content"></div></el-col>
-      <el-col :span="6"><div class="grid-content"></div></el-col>
-      <el-col :span="6"><div class="grid-content"></div></el-col>
-      <el-col :span="6"><div class="grid-content"></div></el-col>
-      <el-col :span="6"><div class="grid-content"></div></el-col>
-      <el-col :span="6"><div class="grid-content"></div></el-col>
-    </el-row>
+    <div class="target_city">
+      <div class="inner">
+        <div class="city">
+          <span>定位城市:</span>
+          <img src="https://p1.meituan.net/travelcube/c6c04160817d530ecddf9f86b158106e2032.png" alt="">
+          <a href="">{{selected_city}}</a>
+        </div>
+      </div>
+    </div>
+    <div class="recently_visited block">
+      <span>最近访问</span>
+      <div class="inner">
+        <el-col :span="6"
+          v-for="(item, index) of recently_visited" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+    </div>
+    <div class="popular_cities block">
+      <span>热门城市</span>
+      <div class="inner">
+        <el-col :span="6"><div class="grid-content"></div></el-col>
+      </div>
+    </div>
+    <div class="all_cities block">
+      <span>全部城市</span>
+      <el-row>
+        <el-col :span="6"><div class="initial grid-content"></div></el-col>
+        <el-col :span="6"><div class="grid-content"></div></el-col>
+        <el-col :span="6"><div class="grid-content"></div></el-col>
+        <el-col :span="6"><div class="grid-content"></div></el-col>
+        <el-col :span="6"><div class="grid-content"></div></el-col>
+        <el-col :span="6"><div class="grid-content"></div></el-col>
+        <el-col :span="6"><div class="grid-content"></div></el-col>
+        <el-col :span="6"><div class="grid-content"></div></el-col>
+        <el-col :span="6"><div class="grid-content"></div></el-col>
+      </el-row>
+    </div>
   </div>
 </template>
 
@@ -38,8 +68,101 @@ export default {
   name: 'change_city',
   data() {
     return {
-      
+      recently_visited: [
+        {
+          name: "上海"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        }
+      ]
     }
+  },
+  computed: {
+    selected_city() {
+      return this.$store.state.SelectedCity
+    },
   },
   created(){
     
@@ -54,7 +177,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
+.change_city {
+  background: #f0efed;
+}
 .header {
   width: 100%;
   height: 51px;
@@ -63,21 +188,14 @@ export default {
   align-items: center;
   padding: 0 15px 0 0;
   .left {
-    width: 76px;
+    width: 91px;
     height: 51px;
     display: flex;
     align-items: center;
-    margin: 0 0 0 15px;
-    span {
-      display: inline-block;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 15px;
-      margin: 0 5px 0 0;
-    }
     img {
       width: 10px;
       display: inline-block;
+      margin: 0 0 0 15px;
     }
   }
   .left:active {
@@ -118,16 +236,72 @@ export default {
         display: inline-block;
       }
     }
+    .return_home:active {
+      background: #FFD000;
+      filter: brightness(90%);
+    }
+    .search:active {
+      background: #FFD000;
+      filter: brightness(90%);
+    }
   }
-  .right:active {
-    background: #FFD000;
-    filter: brightness(90%);
+}
+.target_city {
+  .inner {
+    margin: 10px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 2px;
+    .city {
+      flex: 1;
+      display: flex;
+      justify-content: start;
+      height: 22px;
+      font-size: 14px;
+      span {
+        margin: 0 8px 0 0;
+        color: #222;
+        font-weight: 400;
+      }
+      img {
+        object-fit: contain;
+        width: 12px;
+      }
+      a {
+        margin: 0 0 0 4px;
+        color: #222;
+        font-weight: 400;
+      }
+    }
   }
+}
+.block {
+  font-size: 15px;
+  span {
+    margin: 10px;
+    font-weight: 400;
+  }
+  .inner {
+    margin: 10px;
+    border-radius: 3px;
+    overflow: hidden;
+    
+    background: linear-gradient(90deg, rgba(221, 216, 206, 1) 1px, rgba(255, 255, 255, 0.1) 1px), linear-gradient(rgba(221, 216, 206, 1) 1px, rgba(255, 255, 255, 1) 1px);
+    background-size: calc(25% - 0.3px) 40px;
+  }
+}
+.recently_visited {
+  padding: 10px 0 0 0;
 }
 .grid-content {
   min-height: 40px;
-  border: 1px solid #000;
-  background: #d3dce6;
+  text-align: center;
+  line-height: 40px;
+  color: #333;
+  font-weight: 400;
+}
+.grid-content:active {
+  background: #ddd8ce;
 }
 .initial {
   height: 80px;
