@@ -30,6 +30,11 @@
     <div class="recently_visited block">
       <span>最近访问</span>
       <div class="inner">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            A
+          </div>
+        </el-col>
         <el-col :span="6"
           v-for="(item, index) of recently_visited" 
           :key="index"
@@ -286,7 +291,7 @@ export default {
     border-radius: 3px;
     overflow: hidden;
     
-    background: linear-gradient(90deg, rgba(221, 216, 206, 1) 1px, rgba(255, 255, 255, 0.1) 1px), linear-gradient(rgba(221, 216, 206, 1) 1px, rgba(255, 255, 255, 1) 1px);
+    background: linear-gradient(90deg, rgba(221, 216, 206, 0.5) 1px, rgba(255, 255, 255, 0.5) 1px), linear-gradient(rgba(221, 216, 206, 1) 1px, rgba(255, 255, 255, 1) 1px);
     background-size: calc(25% - 0.3px) 40px;
   }
 }
@@ -305,6 +310,14 @@ export default {
 }
 .initial {
   height: 80px;
+  z-index: 2;
+  background: #fff;
+  line-height: 80px;
+  border-top: 1px solid #ddd8ce;
+  border-left: 1px solid #ddd8ce;
+  font-size: 40px;
+  font-weight: 400;
+  color: #B7B7B7;
 }
 
 </style>
