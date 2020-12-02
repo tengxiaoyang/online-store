@@ -48,22 +48,43 @@
     <div class="popular_cities block">
       <span>热门城市</span>
       <div class="inner">
-        <el-col :span="6"><div class="grid-content"></div></el-col>
+        <el-col :span="6"
+          v-for="(item, index) of popular_cities" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
       </div>
     </div>
     <div class="all_cities block">
       <span>全部城市</span>
-      <el-row>
-        <el-col :span="6"><div class="initial grid-content"></div></el-col>
-        <el-col :span="6"><div class="grid-content"></div></el-col>
-        <el-col :span="6"><div class="grid-content"></div></el-col>
-        <el-col :span="6"><div class="grid-content"></div></el-col>
-        <el-col :span="6"><div class="grid-content"></div></el-col>
-        <el-col :span="6"><div class="grid-content"></div></el-col>
-        <el-col :span="6"><div class="grid-content"></div></el-col>
-        <el-col :span="6"><div class="grid-content"></div></el-col>
-        <el-col :span="6"><div class="grid-content"></div></el-col>
-      </el-row>
+      <div class="inner capital">
+        <el-col :span="6"
+          v-for="(item, index) of capital_of_all_cities" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            A
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
     </div>
   </div>
 </template>
@@ -74,6 +95,273 @@ export default {
   data() {
     return {
       recently_visited: [
+        {
+          name: "上海"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        }
+      ],
+      popular_cities: [
+        {
+          name: "上海"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        }
+      ],
+      capital_of_all_cities: [
+        {
+          name: "上海"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        }
+      ],
+      all_cities: [
         {
           name: "上海"
         },
@@ -184,6 +472,7 @@ export default {
 <style lang="less" scoped>
 .change_city {
   background: #f0efed;
+  height: 100%;
 }
 .header {
   width: 100%;
@@ -285,9 +574,10 @@ export default {
   span {
     margin: 10px;
     font-weight: 400;
+    display: block;
   }
   .inner {
-    margin: 10px;
+    margin: 0 10px 0 10px;
     border-radius: 3px;
     overflow: hidden;
     
@@ -295,7 +585,10 @@ export default {
     background-size: calc(25% - 0.3px) 40px;
   }
 }
-.recently_visited {
+.recently_visited span {
+  padding: 10px 0 0 0;
+}
+.all_cities span {
   padding: 10px 0 0 0;
 }
 .grid-content {
