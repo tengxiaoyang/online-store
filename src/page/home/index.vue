@@ -1,7 +1,7 @@
 <template>
   <div class="home_container">
     <div class="header">
-      <div class="left">
+      <div class="left" @click="route_to('change_city')">
         <span>{{selected_city}}</span>
         <img src="https://p0.meituan.net/travelcube/45c79a92755b54adc9dc1c4682b123b3201.png" alt="">
       </div>
