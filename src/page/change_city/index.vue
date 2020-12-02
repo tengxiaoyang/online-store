@@ -421,7 +421,7 @@ export default {
 .block {
   font-size: 15px;
   span {
-    margin: 10px;
+    margin: 6px 10px 10px 10px;
     font-weight: 400;
     display: block;
   }
@@ -430,7 +430,7 @@ export default {
     border-radius: 3px;
     overflow: hidden;
     
-    background: linear-gradient(90deg, rgba(221, 216, 206, 0.5) 1px, rgba(255, 255, 255, 0.5) 1px), linear-gradient(rgba(221, 216, 206, 1) 1px, rgba(255, 255, 255, 1) 1px);
+    background: linear-gradient(90deg, rgba(221, 216, 206, 0.3) 1px, rgba(255, 255, 255, 0.8) 1px), linear-gradient(rgba(221, 216, 206, 1) 1px, rgba(255, 255, 255, 1) 1px);
     background-size: calc(25% - 0.3px) 40px;
   }
 }
@@ -470,8 +470,8 @@ export default {
   z-index: 2;
   background: #fff;
   line-height: 80px;
-  border-top: 1px solid #ddd8ce;
-  border-left: 1px solid #ddd8ce;
+  border-top: 1px solid rgba(221, 216, 206, 0.3);
+  border-left: 1px solid rgba(221, 216, 206, 0.5);
   font-size: 40px;
   font-weight: 400;
   color: #B7B7B7;
