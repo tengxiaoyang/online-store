@@ -74,7 +74,9 @@
           v-for="(item, index) of all_cities_a" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
@@ -767,58 +769,58 @@ export default {
       ],
       all_cities_b: [
         {
-          name: "上海"
+          name: "北京"
         },
         {
-          name: "西安"
+          name: "保定"
         },
         {
-          name: "西安"
+          name: "包头"
         },
         {
-          name: "西安"
+          name: "蚌埠"
         },
         {
-          name: "西安123"
+          name: "亳州"
         },
         {
-          name: "西安"
+          name: "滨州"
         },
         {
-          name: "西安"
+          name: "宝鸡"
         },
         {
-          name: "西安"
+          name: "巴彦淖尔"
         },
         {
-          name: "西安"
+          name: "本溪"
         },
         {
-          name: "西安"
+          name: "白山"
         },
         {
-          name: "西安"
+          name: "白城"
         },
         {
-          name: "123"
+          name: "北海"
         },
         {
-          name: "西安"
+          name: "百色"
         },
         {
-          name: "123"
+          name: "巴中"
         },
         {
-          name: "西安"
+          name: "毕节"
         },
         {
-          name: "123"
+          name: "保山"
         },
         {
-          name: "西安"
+          name: "白银"
         },
         {
-          name: "123"
+          name: "霸州"
         },
         {
           name: "西安"
@@ -2670,6 +2672,15 @@ export default {
       //   behavior: "smooth",
       //   block: "start"
       // });
+    },
+    change_selected_city(e) {
+      console.log(e)
+      this.$store.commit("set_selected_city", e);
+      window.scrollTo({
+        'top': 0,
+        // 'behavior': 'smooth'
+      });
+      this.route_to('/');
     }
   }
 }
@@ -2837,6 +2848,7 @@ export default {
     color: #b7b7b7;
     padding: 0;
     margin: 0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   }
 }
 .initial:active {
