@@ -746,31 +746,22 @@ export default {
           name: "阿荣旗"
         },
         {
-          name: "西安"
+          name: "安陆市"
         },
         {
-          name: "123"
+          name: "阿城区"
         },
         {
-          name: "西安"
+          name: "阿坝"
         },
         {
-          name: "123"
+          name: "阿里"
         },
         {
-          name: "西安"
+          name: "阿勒泰"
         },
         {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
+          name: "澳门"
         }
       ],
       all_cities_b: [
