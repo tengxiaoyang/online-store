@@ -59,6 +59,7 @@
         <div class="grid-content"
           v-for="(item, index) of capital_of_all_cities" 
           :key="index"
+          @click="scroll_to_capital(item.name)"
         >
           {{item.name}}
         </div>
@@ -2650,6 +2651,16 @@ export default {
     set_more_city(initial, more_cities_content) {
       this.$store.commit("set_more_cities_initial", initial),
       this.$store.commit("set_more_cities_content", more_cities_content)
+    },
+    scroll_to_capital(e) {
+      let PageId = document.querySelector('#' + e)
+      console.log('#' + e)
+      console.log(PageId)
+      console.log(PageId.offsetTop)
+      window.scrollTo({
+        'top': PageId.offsetTop,
+        // 'behavior': 'smooth'
+      })
     }
   }
 }
