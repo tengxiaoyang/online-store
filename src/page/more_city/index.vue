@@ -154,6 +154,9 @@ export default {
   line-height: 40px;
   color: #333;
   font-weight: 400;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .grid-content:active {
   background: #ddd8ce;

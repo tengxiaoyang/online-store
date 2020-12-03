@@ -98,7 +98,9 @@
           v-for="(item, index) of all_cities_b" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
@@ -117,16 +119,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_c" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('C', all_cities_c)"
           >
             更多»
           </div>
@@ -139,16 +143,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_d" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('D', all_cities_d)"
           >
             更多»
           </div>
@@ -161,16 +167,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_e" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('E', all_cities_e)"
           >
             更多»
           </div>
@@ -183,16 +191,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_f" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('F', all_cities_f)"
           >
             更多»
           </div>
@@ -205,16 +215,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_g" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('G', all_cities_g)"
           >
             更多»
           </div>
@@ -227,16 +239,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_h" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('H', all_cities_h)"
           >
             更多»
           </div>
@@ -249,16 +263,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_j" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('J', all_cities_j)"
           >
             更多»
           </div>
@@ -271,16 +287,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_k" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('K', all_cities_k)"
           >
             更多»
           </div>
@@ -293,16 +311,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_l" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('L', all_cities_l)"
           >
             更多»
           </div>
@@ -315,16 +335,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_m" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('M', all_cities_m)"
           >
             更多»
           </div>
@@ -337,16 +359,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_n" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('N', all_cities_n)"
           >
             更多»
           </div>
@@ -359,16 +383,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_p" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('P', all_cities_p)"
           >
             更多»
           </div>
@@ -381,16 +407,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_q" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('Q', all_cities_q)"
           >
             更多»
           </div>
@@ -403,16 +431,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_r" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('R', all_cities_r)"
           >
             更多»
           </div>
@@ -425,16 +455,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_s" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('S', all_cities_s)"
           >
             更多»
           </div>
@@ -447,16 +479,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_t" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('T', all_cities_t)"
           >
             更多»
           </div>
@@ -469,16 +503,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_w" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('W', all_cities_w)"
           >
             更多»
           </div>
@@ -491,16 +527,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_x" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('X', all_cities_x)"
           >
             更多»
           </div>
@@ -513,16 +551,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_y" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('Y', all_cities_y)"
           >
             更多»
           </div>
@@ -535,16 +575,18 @@
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities_b" 
+          v-for="(item, index) of all_cities_z" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
         <el-col :span="6">
           <div class="grid-content"
-            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+            @click="route_to('more_city'), set_more_city('Z', all_cities_z)"
           >
             更多»
           </div>
@@ -823,111 +865,147 @@ export default {
           name: "霸州"
         },
         {
-          name: "西安"
+          name: "宝应"
         },
         {
-          name: "123"
+          name: "北流"
         },
         {
-          name: "西安"
+          name: "博爱"
         },
         {
-          name: "123"
+          name: "宝丰"
         },
         {
-          name: "西安"
+          name: "博兴"
         },
         {
-          name: "123"
+          name: "泌阳"
         },
         {
-          name: "西安"
+          name: "彬州市"
         },
         {
-          name: "123"
+          name: "璧山"
         },
         {
-          name: "西安"
+          name: "博山"
         },
         {
-          name: "123"
+          name: "宾阳"
         },
         {
-          name: "西安"
+          name: "泊头市"
+        },
+        {
+          name: "博罗县"
+        },
+        {
+          name: "博白县"
+        },
+        {
+          name: "北镇市"
+        },
+        {
+          name: "北安市"
+        },
+        {
+          name: "巴彦县"
+        },
+        {
+          name: "巴楚县"
+        },
+        {
+          name: "拜城县"
+        },
+        {
+          name: "拜泉县"
+        },
+        {
+          name: "博尔塔拉"
+        },
+        {
+          name: "巴州"
+        },
+        {
+          name: "滨海"
+        },
+        {
+          name: "北碚"
         }
       ],
       all_cities_c: [
         {
-          name: "上海"
+          name: "重庆"
         },
         {
-          name: "西安"
+          name: "成都"
         },
         {
-          name: "西安"
+          name: "长沙"
         },
         {
-          name: "西安"
+          name: "常州"
         },
         {
-          name: "西安123"
+          name: "长春"
         },
         {
-          name: "西安"
+          name: "承德"
         },
         {
-          name: "西安"
+          name: "沧州"
         },
         {
-          name: "西安"
+          name: "长治"
         },
         {
-          name: "西安"
+          name: "赤峰"
         },
         {
-          name: "西安"
+          name: "滁州"
         },
         {
-          name: "西安"
+          name: "常德"
         },
         {
-          name: "123"
+          name: "郴州"
         },
         {
-          name: "西安"
+          name: "常熟"
         },
         {
-          name: "123"
+          name: "慈溪"
         },
         {
-          name: "西安"
+          name: "朝阳"
         },
         {
-          name: "123"
+          name: "巢湖"
         },
         {
-          name: "西安"
+          name: "池州"
         },
         {
-          name: "123"
+          name: "潮州"
         },
         {
-          name: "西安"
+          name: "从化"
         },
         {
-          name: "123"
+          name: "长兴"
         },
         {
-          name: "西安"
+          name: "昌邑"
         },
         {
-          name: "123"
+          name: "苍南"
         },
         {
-          name: "西安"
+          name: "长葛"
         },
         {
-          name: "123"
+          name: "昌江黎族自治县"
         },
         {
           name: "西安"
@@ -2830,6 +2908,10 @@ export default {
   line-height: 40px;
   color: #333;
   font-weight: 400;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .grid-content:active {
   background: #ddd8ce;
