@@ -16,6 +16,10 @@ export default [{
   path: '/change_city',
   component: r => require.ensure([], () => r(require('../page/change_city')), 'change_city')
 }, 
+{
+  path: '/more_city',
+  component: r => require.ensure([], () => r(require('../page/more_city')), 'more_city')
+}, 
 // {
 //   path: '/search',
 //   component: r => require.ensure([], () => r(require('../page/search')), 'search')
