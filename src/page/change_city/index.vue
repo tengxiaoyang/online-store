@@ -99,6 +99,13 @@
             {{item.name}}
           </div>
         </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('B', all_cities_b)"
+          >
+            更多»
+          </div>
+        </el-col>
       </div>
       <div class="inner initial_c">
         <el-col :span="6">
@@ -112,6 +119,13 @@
         >
           <div class="grid-content">
             {{item.name}}
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
           </div>
         </el-col>
       </div>
@@ -129,6 +143,13 @@
             {{item.name}}
           </div>
         </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
+          </div>
+        </el-col>
       </div>
       <div class="inner initial_e">
         <el-col :span="6">
@@ -142,6 +163,13 @@
         >
           <div class="grid-content">
             {{item.name}}
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
           </div>
         </el-col>
       </div>
@@ -159,6 +187,13 @@
             {{item.name}}
           </div>
         </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
+          </div>
+        </el-col>
       </div>
       <div class="inner initial_g">
         <el-col :span="6">
@@ -172,6 +207,13 @@
         >
           <div class="grid-content">
             {{item.name}}
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
           </div>
         </el-col>
       </div>
@@ -189,6 +231,13 @@
             {{item.name}}
           </div>
         </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
+          </div>
+        </el-col>
       </div>
       <div class="inner initial_j">
         <el-col :span="6">
@@ -202,6 +251,13 @@
         >
           <div class="grid-content">
             {{item.name}}
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
           </div>
         </el-col>
       </div>
@@ -219,6 +275,13 @@
             {{item.name}}
           </div>
         </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
+          </div>
+        </el-col>
       </div>
       <div class="inner initial_l">
         <el-col :span="6">
@@ -232,6 +295,13 @@
         >
           <div class="grid-content">
             {{item.name}}
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
           </div>
         </el-col>
       </div>
@@ -249,6 +319,13 @@
             {{item.name}}
           </div>
         </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
+          </div>
+        </el-col>
       </div>
       <div class="inner initial_n">
         <el-col :span="6">
@@ -262,6 +339,13 @@
         >
           <div class="grid-content">
             {{item.name}}
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
           </div>
         </el-col>
       </div>
@@ -279,6 +363,13 @@
             {{item.name}}
           </div>
         </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
+          </div>
+        </el-col>
       </div>
       <div class="inner initial_q">
         <el-col :span="6">
@@ -292,6 +383,13 @@
         >
           <div class="grid-content">
             {{item.name}}
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
           </div>
         </el-col>
       </div>
@@ -309,6 +407,13 @@
             {{item.name}}
           </div>
         </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
+          </div>
+        </el-col>
       </div>
       <div class="inner initial_s">
         <el-col :span="6">
@@ -322,6 +427,13 @@
         >
           <div class="grid-content">
             {{item.name}}
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
           </div>
         </el-col>
       </div>
@@ -339,6 +451,13 @@
             {{item.name}}
           </div>
         </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
+          </div>
+        </el-col>
       </div>
       <div class="inner initial_w">
         <el-col :span="6">
@@ -352,6 +471,13 @@
         >
           <div class="grid-content">
             {{item.name}}
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
           </div>
         </el-col>
       </div>
@@ -369,6 +495,13 @@
             {{item.name}}
           </div>
         </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
+          </div>
+        </el-col>
       </div>
       <div class="inner initial_y">
         <el-col :span="6">
@@ -384,6 +517,13 @@
             {{item.name}}
           </div>
         </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
+          </div>
+        </el-col>
       </div>
       <div class="inner initial_z">
         <el-col :span="6">
@@ -397,6 +537,13 @@
         >
           <div class="grid-content">
             {{item.name}}
+          </div>
+        </el-col>
+        <el-col :span="6">
+          <div class="grid-content"
+            @click="route_to('more_city'), set_more_city('A', all_cities_a)"
+          >
+            更多»
           </div>
         </el-col>
       </div>
@@ -2677,6 +2824,8 @@ export default {
   color: #B7B7B7;
   span {
     color: #b7b7b7;
+    padding: 0;
+    margin: 0;
   }
 }
 .initial:active {
