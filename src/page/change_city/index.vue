@@ -2653,14 +2653,23 @@ export default {
       this.$store.commit("set_more_cities_content", more_cities_content)
     },
     scroll_to_capital(e) {
-      let PageId = document.querySelector('#' + e)
-      console.log('#' + e)
-      console.log(PageId)
-      console.log(PageId.offsetTop)
+      let target_id = document.querySelector(`#${e}`)
+      // console.log('#' + e)
+      console.log(`#${e}`)
+      console.log(target_id)
+      console.log(target_id.offsetTop)
       window.scrollTo({
-        'top': PageId.offsetTop,
+        'top': target_id.offsetTop - 12,
         // 'behavior': 'smooth'
       })
+
+      // console.log(`#${e}`);
+      // let PageId = this.$el.querySelector(`#${e}`);
+      // console.log(PageId);
+      // PageId.scrollIntoView({
+      //   behavior: "smooth",
+      //   block: "start"
+      // });
     }
   }
 }
