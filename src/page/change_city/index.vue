@@ -63,14 +63,329 @@
           {{item.name}}
         </div>
       </div>
-      <div class="inner">
+      <div class="inner initial_a">
         <el-col :span="6">
           <div class="grid-content initial">
-            A
+            <span id="A">A</span>
           </div>
         </el-col>
         <el-col :span="6"
-          v-for="(item, index) of all_cities" 
+          v-for="(item, index) of all_cities_a" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_b">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="B">B</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_c">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="C">C</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_d">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="D">D</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_e">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="E">E</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_f">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="F">F</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_g">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="G">G</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_h">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="H">H</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_j">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="J">J</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_k">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="K">K</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_l">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="L">L</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_m">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="M">M</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_n">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="N">N</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_p">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="P">P</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_q">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="Q">Q</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_r">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="R">R</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_s">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="S">S</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_t">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="T">T</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_w">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="W">W</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_x">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="X">X</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_y">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="Y">Y</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
+          :key="index"
+        >
+          <div class="grid-content">
+            {{item.name}}
+          </div>
+        </el-col>
+      </div>
+      <div class="inner initial_z">
+        <el-col :span="6">
+          <div class="grid-content initial">
+            <span id="Z">Z</span>
+          </div>
+        </el-col>
+        <el-col :span="6"
+          v-for="(item, index) of all_cities_b" 
           :key="index"
         >
           <div class="grid-content">
@@ -79,11 +394,16 @@
         </el-col>
       </div>
     </div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+import Footer from "../../component/Footer";
 export default {
+  components: {
+    Footer
+  },
   name: 'change_city',
   data() {
     return {
@@ -210,7 +530,96 @@ export default {
           name: "Z"
         }
       ],
-      all_cities: [
+      all_cities_a: [
+        {
+          name: "上海"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        },
+        {
+          name: "123"
+        },
+        {
+          name: "西安"
+        }
+      ],
+      all_cities_b: [
         {
           name: "上海"
         },
@@ -475,6 +884,9 @@ export default {
   font-size: 40px;
   font-weight: 400;
   color: #B7B7B7;
+  span {
+    color: #b7b7b7;
+  }
 }
 .initial:active {
   background: #fff;

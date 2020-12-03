@@ -7,7 +7,7 @@ Vue.use(Vuex)
 
 const state = {
 	// num: 0,
-	SelectedCity: "西安",
+	SelectedCity: "西安"
 }
 
 export default new Vuex.Store({
