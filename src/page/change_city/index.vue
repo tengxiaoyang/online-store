@@ -1291,91 +1291,25 @@ export default {
       ],
       all_cities_e: [
         {
-          name: "上海"
+          name: "鄂尔多斯"
         },
         {
-          name: "西安"
+          name: "鄂州"
         },
         {
-          name: "西安"
+          name: "恩施"
         },
         {
-          name: "西安"
+          name: "恩平"
         },
         {
-          name: "西安123"
+          name: "峨眉山"
         },
         {
-          name: "西安"
+          name: "额敏县"
         },
         {
-          name: "西安"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
-        },
-        {
-          name: "123"
-        },
-        {
-          name: "西安"
+          name: "额尔古纳"
         }
       ],
       all_cities_f: [
