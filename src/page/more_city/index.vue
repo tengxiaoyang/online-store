@@ -55,6 +55,10 @@ export default {
   created(){
     //进入题目页面，开始计时
     // this.$store.commit('REMBER_TIME');
+    window.scrollTo({
+      'top': 0,
+      // 'behavior': 'smooth'
+    });
   },
   // filters: {
   //   capitalize: function(value) {
