@@ -22,7 +22,9 @@
           v-for="(item, index) of more_cities_content" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
@@ -51,6 +53,9 @@ export default {
     more_cities_content() {
       return this.$store.state.MoreCitiesContent
     },
+    recently_visited() {
+      return this.$store.state.RecentlyVisited
+    },
   },
   created(){
     //进入题目页面，开始计时
@@ -64,7 +69,34 @@ export default {
   //   capitalize: function(value) {
   //     return value.toUpperCase();
   //   }
-  // }
+  // },
+  methods: {
+    route_to(e) {
+      this.$router.push({path: e})
+    },
+    change_selected_city(e) {
+      console.log(e)
+      this.$store.commit("set_selected_city", e);
+      this.add_to_city_history(e);
+      window.scrollTo({
+        'top': 0,
+        // 'behavior': 'smooth'
+      });
+      this.route_to('/');
+    },
+    add_to_city_history(e) {
+      console.log(this.recently_visited)
+      for (let i = 0; i < this.recently_visited.length; ++ i) {
+        if (this.recently_visited[i].name === e) {
+          console.log(2)
+          this.recently_visited.splice(i, 1);
+        }
+      }
+      this.recently_visited.unshift({name: e});
+      console.log(this.recently_visited);
+      this.$store.commit("set_city_history", this.recently_visited.slice(0, 6));
+    }
+  }
 }
 
 </script>

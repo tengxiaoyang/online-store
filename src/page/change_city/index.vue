@@ -34,7 +34,9 @@
           v-for="(item, index) of recently_visited" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
@@ -47,7 +49,9 @@
           v-for="(item, index) of popular_cities" 
           :key="index"
         >
-          <div class="grid-content">
+          <div class="grid-content"
+            @click="change_selected_city(item.name)"
+          >
             {{item.name}}
           </div>
         </el-col>
@@ -606,26 +610,6 @@ export default {
   name: 'change_city',
   data() {
     return {
-      recently_visited: [
-        {
-          name: "杭州"
-        },
-        {
-          name: "武汉"
-        },
-        {
-          name: "深圳"
-        },
-        {
-          name: "北京"
-        },
-        {
-          name: "上海"
-        },
-        {
-          name: "西安"
-        }
-      ],
       popular_cities: [
         {
           name: "北京"
@@ -2831,6 +2815,9 @@ export default {
     selected_city() {
       return this.$store.state.SelectedCity
     },
+    recently_visited() {
+      return this.$store.state.RecentlyVisited
+    },
   },
   created(){
     
@@ -2853,23 +2840,28 @@ export default {
         'top': target_id.offsetTop - 12,
         // 'behavior': 'smooth'
       })
-
-      // console.log(`#${e}`);
-      // let PageId = this.$el.querySelector(`#${e}`);
-      // console.log(PageId);
-      // PageId.scrollIntoView({
-      //   behavior: "smooth",
-      //   block: "start"
-      // });
     },
     change_selected_city(e) {
       console.log(e)
       this.$store.commit("set_selected_city", e);
+      this.add_to_city_history(e);
       window.scrollTo({
         'top': 0,
         // 'behavior': 'smooth'
       });
       this.route_to('/');
+    },
+    add_to_city_history(e) {
+      console.log(this.recently_visited)
+      for (let i = 0; i < this.recently_visited.length; ++ i) {
+        if (this.recently_visited[i].name === e) {
+          console.log(2)
+          this.recently_visited.splice(i, 1);
+        }
+      }
+      this.recently_visited.unshift({name: e});
+      console.log(this.recently_visited);
+      this.$store.commit("set_city_history", this.recently_visited.slice(0, 6));
     }
   }
 }

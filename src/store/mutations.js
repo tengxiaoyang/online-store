@@ -2,6 +2,7 @@
 const set_selected_city = 'set_selected_city';
 const set_more_cities_initial = 'set_more_cities_initial';
 const set_more_cities_content = 'set_more_cities_content';
+const set_city_history = 'set_city_history';
 
 export default {
 	//点击进入下一题
@@ -16,5 +17,8 @@ export default {
 	},
 	[set_more_cities_content](state, e) {
 		state.MoreCitiesContent = e;
+	},
+	[set_city_history](state, e) {
+		state.RecentlyVisited = e;
 	},
 }
