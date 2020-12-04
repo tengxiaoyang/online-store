@@ -72,5 +72,5 @@ module.exports = {
                 browsers: ['last 10 versions']
             })
         ]
-    }
+    },
 }
