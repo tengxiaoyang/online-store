@@ -2575,91 +2575,118 @@ export default {
       ],
       all_cities_n: [
         {
-          name: "上海"
+          name: "南京"
         },
         {
-          name: "西安"
+          name: "宁波"
         },
         {
-          name: "西安"
+          name: "南宁"
         },
         {
-          name: "西安"
+          name: "南通"
         },
         {
-          name: "西安123"
+          name: "南昌"
         },
         {
-          name: "西安"
+          name: "南阳"
         },
         {
-          name: "西安"
+          name: "宁德"
         },
         {
-          name: "西安"
+          name: "南充"
         },
         {
-          name: "西安"
+          name: "南平"
         },
         {
-          name: "西安"
+          name: "内江"
         },
         {
-          name: "西安"
+          name: "宁海"
         },
         {
-          name: "123"
+          name: "南安"
         },
         {
-          name: "西安"
+          name: "宁乡"
         },
         {
-          name: "123"
+          name: "南沙"
         },
         {
-          name: "西安"
+          name: "讷河"
         },
         {
-          name: "123"
+          name: "南雄"
         },
         {
-          name: "西安"
+          name: "南乐"
         },
         {
-          name: "123"
+          name: "南陵"
         },
         {
-          name: "西安"
+          name: "宁阳"
         },
         {
-          name: "123"
+          name: "宁国"
         },
         {
-          name: "西安"
+          name: "宁晋"
         },
         {
-          name: "123"
+          name: "宁津"
         },
         {
-          name: "西安"
+          name: "内丘"
         },
         {
-          name: "123"
+          name: "南宫"
         },
         {
-          name: "西安"
+          name: "内黄"
         },
         {
-          name: "123"
+          name: "南和区"
         },
         {
-          name: "西安"
+          name: "南部县"
         },
         {
-          name: "123"
+          name: "南皮县"
         },
         {
-          name: "西安"
+          name: "宁陵"
+        },
+        {
+          name: "南郑区"
+        },
+        {
+          name: "宁蒗彝族自治县"
+        },
+        {
+          name: "嫩江市"
+        },
+        {
+          name: "宁远县"
+        },
+        {
+          name: "南川"
+        },
+        {
+          name: "农安县"
+        },
+        {
+          name: "怒江"
+        },
+        {
+          name: "那曲"
+        },
+        {
+          name: "南投"
         }
       ],
       all_cities_p: [
