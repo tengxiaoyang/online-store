@@ -1298,91 +1298,142 @@ export default {
       ],
       all_cities_f: [
         {
-          name: "上海"
+          name: "福州"
         },
         {
-          name: "西安"
+          name: "佛山"
         },
         {
-          name: "西安"
+          name: "抚顺"
         },
         {
-          name: "西安"
+          name: "阜阳"
         },
         {
-          name: "西安123"
+          name: "抚州"
         },
         {
-          name: "西安"
+          name: "阜新"
         },
         {
-          name: "西安"
+          name: "富阳"
         },
         {
-          name: "西安"
+          name: "涪陵"
         },
         {
-          name: "西安"
+          name: "福清"
         },
         {
-          name: "西安"
+          name: "奉化"
         },
         {
-          name: "西安"
+          name: "肥城"
         },
         {
-          name: "123"
+          name: "防城港"
         },
         {
-          name: "西安"
+          name: "凤凰"
         },
         {
-          name: "123"
+          name: "阜宁"
         },
         {
-          name: "西安"
+          name: "凤城"
         },
         {
-          name: "123"
+          name: "汾阳"
         },
         {
-          name: "西安"
+          name: "阜康"
         },
         {
-          name: "123"
+          name: "丰城"
         },
         {
-          name: "西安"
+          name: "范县"
         },
         {
-          name: "123"
+          name: "繁昌"
         },
         {
-          name: "西安"
+          name: "肥乡区"
         },
         {
-          name: "123"
+          name: "封丘"
         },
         {
-          name: "西安"
+          name: "扶风"
         },
         {
-          name: "123"
+          name: "丰县"
         },
         {
-          name: "西安"
+          name: "抚松"
         },
         {
-          name: "123"
+          name: "富顺"
         },
         {
-          name: "西安"
+          name: "费县"
         },
         {
-          name: "123"
+          name: "佛冈"
         },
         {
-          name: "西安"
+          name: "丰宁"
+        },
+        {
+          name: "扶沟"
+        },
+        {
+          name: "凤台"
+        },
+        {
+          name: "奉新"
+        },
+        {
+          name: "方城"
+        },
+        {
+          name: "富源县"
+        },
+        {
+          name: "分宜"
+        },
+        {
+          name: "扶绥县"
+        },
+        {
+          name: "肥西县"
+        },
+        {
+          name: "繁峙县"
+        },
+        {
+          name: "凤翔县"
+        },
+        {
+          name: "福安"
+        },
+        {
+          name: "福鼎市"
+        },
+        {
+          name: "府谷县"
+        },
+        {
+          name: "奉节"
+        },
+        {
+          name: "丰都"
+        },
+        {
+          name: "肥东县"
+        },
+        {
+          name: "富民"
         }
       ],
       all_cities_g: [
