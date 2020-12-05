@@ -3929,91 +3929,274 @@ export default {
       ],
       all_cities_y: [
         {
-          name: "上海"
+          name: "烟台"
         },
         {
-          name: "西安"
+          name: "扬州"
         },
         {
-          name: "西安"
+          name: "盐城"
         },
         {
-          name: "西安"
+          name: "宜昌"
         },
         {
-          name: "西安123"
+          name: "岳阳"
         },
         {
-          name: "西安"
+          name: "银川"
         },
         {
-          name: "西安"
+          name: "运城"
         },
         {
-          name: "西安"
+          name: "营口"
         },
         {
-          name: "西安"
+          name: "宜春"
         },
         {
-          name: "西安"
+          name: "益阳"
         },
         {
-          name: "西安"
+          name: "阳江"
         },
         {
-          name: "123"
+          name: "玉林"
         },
         {
-          name: "西安"
+          name: "宜宾"
         },
         {
-          name: "123"
+          name: "榆林"
         },
         {
-          name: "西安"
+          name: "义乌"
         },
         {
-          name: "123"
+          name: "宜兴"
         },
         {
-          name: "西安"
+          name: "余姚"
         },
         {
-          name: "123"
+          name: "乐清"
         },
         {
-          name: "西安"
+          name: "阳泉"
         },
         {
-          name: "123"
+          name: "延边"
         },
         {
-          name: "西安"
+          name: "鹰潭"
         },
         {
-          name: "123"
+          name: "永州"
         },
         {
-          name: "西安"
+          name: "云浮"
         },
         {
-          name: "123"
+          name: "玉溪"
         },
         {
-          name: "西安"
+          name: "延安"
         },
         {
-          name: "123"
+          name: "兖州"
         },
         {
-          name: "西安"
+          name: "永康"
         },
         {
-          name: "123"
+          name: "英德"
         },
         {
-          name: "西安"
+          name: "仪征"
+        },
+        {
+          name: "永城"
+        },
+        {
+          name: "禹州"
+        },
+        {
+          name: "伊宁"
+        },
+        {
+          name: "永川"
+        },
+        {
+          name: "雅安"
+        },
+        {
+          name: "阳朔"
+        },
+        {
+          name: "伊川"
+        },
+        {
+          name: "偃师"
+        },
+        {
+          name: "扬中"
+        },
+        {
+          name: "永济"
+        },
+        {
+          name: "禹城"
+        },
+        {
+          name: "宜城"
+        },
+        {
+          name: "原平"
+        },
+        {
+          name: "宜都"
+        },
+        {
+          name: "沅江"
+        },
+        {
+          name: "玉环市"
+        },
+        {
+          name: "永年"
+        },
+        {
+          name: "阳城"
+        },
+        {
+          name: "云阳"
+        },
+        {
+          name: "叶县"
+        },
+        {
+          name: "易县"
+        },
+        {
+          name: "宜阳"
+        },
+        {
+          name: "阎良"
+        },
+        {
+          name: "原阳"
+        },
+        {
+          name: "虞城"
+        },
+        {
+          name: "玉山"
+        },
+        {
+          name: "阳谷"
+        },
+        {
+          name: "郓城"
+        },
+        {
+          name: "伊金霍洛旗"
+        },
+        {
+          name: "杨陵"
+        },
+        {
+          name: "沂水"
+        },
+        {
+          name: "沂南"
+        },
+        {
+          name: "于都"
+        },
+        {
+          name: "宜丰"
+        },
+        {
+          name: "营山县"
+        },
+        {
+          name: "永安"
+        },
+        {
+          name: "鄢陵"
+        },
+        {
+          name: "永丰"
+        },
+        {
+          name: "永新"
+        },
+        {
+          name: "永兴县"
+        },
+        {
+          name: "攸县"
+        },
+        {
+          name: "永顺县"
+        },
+        {
+          name: "裕民县"
+        },
+        {
+          name: "酉阳土家族苗族自治县"
+        },
+        {
+          name: "应县"
+        },
+        {
+          name: "阳山县"
+        },
+        {
+          name: "榆树市"
+        },
+        {
+          name: "沅陵县"
+        },
+        {
+          name: "永登县"
+        },
+        {
+          name: "鱼台县"
+        },
+        {
+          name: "宜州区"
+        },
+        {
+          name: "义马市"
+        },
+        {
+          name: "永嘉县"
+        },
+        {
+          name: "盂县"
+        },
+        {
+          name: "宜良县"
+        },
+        {
+          name: "玉田县"
+        },
+        {
+          name: "永宁县"
+        },
+        {
+          name: "伊春"
+        },
+        {
+          name: "玉树"
+        },
+        {
+          name: "伊犁"
+        },
+        {
+          name: "宜兰"
         }
       ],
       all_cities_z: [
