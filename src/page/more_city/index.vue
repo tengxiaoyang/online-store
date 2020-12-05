@@ -1,7 +1,7 @@
 <template>
   <div class="more_city">
     <div class="header">
-      <div class="left" @click="route_to('/')">
+      <div class="left" @click="route_to('change_city')">
         <img src="https://p1.meituan.net/travelcube/53361fd0bb6b333e779377789a8d669e531.png" alt="">
       </div>
       <div class="search_box">
