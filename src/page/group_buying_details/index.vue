@@ -48,7 +48,10 @@
           </div>
         </div>
         <div class="bottom">
-          <div class="refund_anytime"></div>
+          <div class="refund_anytime">
+            <span class="icon"></span>
+            <span class="text"></span>
+          </div>
           <div class="automatic_refund"></div>
           <div class="sold"></div>
         </div>
@@ -257,7 +260,9 @@ export default {
   width: 100%;
   height: 100%;
   .top {
+    display: flex;
     .left {
+      flex: 1;
       display: flex;
       align-items: center;
       height: 60px;
@@ -291,7 +296,21 @@ export default {
       }
     }
     .right {
-
+      width: 140px;
+      display: flex;
+      align-items: center;
+      height: 60px;
+      .purchase {
+        background: #f90;
+        width: 130px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+        border-radius: 3px;
+        font-size: 20px;
+        font-weight: 400;
+      }
     }
   }
   .bottom {
