@@ -1,5 +1,7 @@
 <template>
-  <div class="item">
+  <div class="item"
+    @click="route_to('group_buying_details')"
+  >
     <div class="left">
       <img :src="guess_content.img" :alt="guess_content.name">
     </div>
