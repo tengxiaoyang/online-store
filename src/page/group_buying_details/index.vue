@@ -50,12 +50,30 @@
         <div class="bottom">
           <div class="refund_anytime">
             <span class="icon"></span>
-            <span class="text"></span>
+            <span class="text">支持随时退款</span>
           </div>
-          <div class="automatic_refund"></div>
-          <div class="sold"></div>
+          <div class="automatic_refund">
+            <span class="icon"></span>
+            <span class="text">支持过期自动退</span>
+          </div>
+          <div class="sold">
+            <span class="icon"></span>
+            <span class="text">已售199483</span>
+          </div>
         </div>
       </div>
+    </div>
+    <div class="evaluate">
+      <div class="top">
+        <div class="stars">
+          <i class="star-orange"></i>
+          <i class="star-orange"></i>
+          <i class="star-orange"></i>
+          <i class="star-orange"></i>
+          <i class="star-grey"></i>
+        </div>
+      </div>
+      <div class="bottom"></div>
     </div>
   </div>
 </template>
@@ -96,6 +114,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.group_buying_details {
+  background: #f0f0f0;
+}
 .header {
   width: 100%;
   height: 51px;
@@ -255,66 +276,165 @@ export default {
       }
     }
   }
-}
-.price_and_purchase {
-  width: 100%;
-  height: 100%;
-  .top {
-    display: flex;
-    .left {
-      flex: 1;
+  .price_and_purchase {
+    width: 100%;
+    height: 100%;
+    .top {
       display: flex;
-      align-items: center;
-      height: 60px;
-      .price {
+      background: #fff;
+      .left {
+        flex: 1;
         display: flex;
-        margin: 0 0 0 9px;
-        align-items: flex-end;
-        .num {
-          display: inline-block;
-          color: #06c1ae;
-          font-weight: 700;
-          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-          font-size: 32px;
+        align-items: center;
+        height: 60px;
+        .price {
+          display: flex;
+          margin: 0 0 0 9px;
+          align-items: flex-end;
+          .num {
+            display: inline-block;
+            color: #06c1ae;
+            font-weight: 700;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 32px;
+          }
+          .cny {
+            display: inline-block;
+            color: #06c1ae;
+            font-weight: 400;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            margin: 0 0 3px 3px;
+          }
         }
-        .cny {
+        .counter_price {
+          margin: 14px 0 0 5px;
           display: inline-block;
-          color: #06c1ae;
+          color: #999;
           font-weight: 400;
           font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
           font-size: 13px;
-          margin: 0 0 3px 3px;
         }
       }
-      .counter_price {
-        margin: 14px 0 0 5px;
-        display: inline-block;
-        color: #999;
-        font-weight: 400;
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 13px;
+      .right {
+        width: 140px;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        .purchase {
+          background: #f90;
+          width: 130px;
+          height: 40px;
+          text-align: center;
+          line-height: 40px;
+          color: #fff;
+          border-radius: 3px;
+          font-size: 20px;
+          font-weight: 400;
+        }
       }
     }
-    .right {
-      width: 140px;
-      display: flex;
-      align-items: center;
-      height: 60px;
-      .purchase {
-        background: #f90;
-        width: 130px;
-        height: 40px;
-        text-align: center;
-        line-height: 40px;
-        color: #fff;
-        border-radius: 3px;
-        font-size: 20px;
-        font-weight: 400;
+    .bottom {
+      padding: 17px 9px;
+      height: 100%;
+      overflow: hidden;
+      background: #fff;
+      margin: 1px 0 0 0;
+      .refund_anytime {
+        width: 50%;
+        float: left;
+        display: flex;
+        height: 30px;
+        .icon {
+          background-image: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@da8f38f);
+          background-position: 208px 23px;
+          background-size: 115px;
+          width: 24px;
+          height: 24px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .text {
+          color: #6bbd00;
+          font-size: 14px;
+          font-weight: 400;
+          vertical-align: middle;
+          margin: 0 0 0 3px;
+        }
+      }
+      .automatic_refund {
+        width: 50%;
+        float: left;
+        display: flex;
+        height: 30px;
+        .icon {
+          background-image: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@da8f38f);
+          background-position: 185px 23px;
+          background-size: 115px;
+          width: 24px;
+          height: 24px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .text {
+          color: #6bbd00;
+          font-size: 14px;
+          font-weight: 400;
+          vertical-align: middle;
+          margin: 0 0 0 3px;
+        }
+      }
+      .sold {
+        width: 50%;
+        float: left;
+        display: flex;
+        height: 30px;
+        .icon {
+          background-image: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@da8f38f);
+          background-position: 162px 23px;
+          background-size: 115px;
+          width: 24px;
+          height: 24px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .text {
+          color: #666;
+          font-size: 14px;
+          font-weight: 400;
+          vertical-align: middle;
+          margin: 0 0 0 3px;
+        }
+      }
+    }
+  }
+}
+.evaluate {
+  width: 100%;
+  height: 40px;
+  margin: 11px 0 0 0;
+  .top {
+    width: 100%;
+    height: 30px;
+    background: #fff;
+    .stars {
+      .star-orange {
+        background: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/cb45534a7d3737c0.png@da8f38f);
+        background-size: 20px;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+      }
+      .star-grey {
+        
       }
     }
   }
   .bottom {
-
+    width: 100%;
+    height: 30px;
+    background: #fff;
+    margin: 1px 0 0 0;
   }
 }
 </style>
