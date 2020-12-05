@@ -24,11 +24,45 @@
         </div>
       </div>
     </div>
+    <AppBannerGreen></AppBannerGreen>
+    <div class="product_info">
+      <div class="main_img">
+        <img src="http://p0.meituan.net/deal/340b857ba4d97eefd17372a2438ed23d100485.jpg" alt="">
+        <div class="shadow"></div>
+        <div class="title_and_type">
+          <div class="title">鑫海汇海鲜烤肉火锅自助</div>
+          <span class="product_type">单人自助晚餐</span>
+        </div>
+      </div>
+      <div class="price_and_purchase">
+        <div class="top">
+          <div class="left">
+            <div class="price">
+              <span class="num">66.9</span>
+              <span class="cny">元</span>
+            </div>
+            <div class="counter_price">门市价:86元</div>
+          </div>
+          <div class="right">
+            <div class="purchase">立即抢购</div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="refund_anytime"></div>
+          <div class="automatic_refund"></div>
+          <div class="sold"></div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import AppBannerGreen from "../../component/AppBannerGreen";
 export default {
+  components: {
+    AppBannerGreen
+  },
   name: 'group_buying_details',
   data() {
     return {
@@ -59,7 +93,6 @@ export default {
 </script>
 
 <style lang="less" scoped>
-
 .header {
   width: 100%;
   height: 51px;
@@ -182,5 +215,87 @@ export default {
     }
   }
 }
+.product_info {
+  position: relative;
+  .main_img {
+    width: 100%;
+    height: 197px;
+    position: relative;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+    .shadow {
+      height: 110px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.3) 64%, transparent);
+    }
+    .title_and_type {
+      position: absolute;
+      bottom: 0;
+      padding: 14px;
+      .title {
+        color: #fff;
+        font-weight: 800;
+        font-size: 19px;
+        margin: 6px 0;
+      }
+      .product_type {
+        color: #fff;
+        font-weight: 400;
+        font-size: 14px;
+        display: block;
+      }
+    }
+  }
+}
+.price_and_purchase {
+  width: 100%;
+  height: 100%;
+  .top {
+    .left {
+      display: flex;
+      align-items: center;
+      height: 60px;
+      .price {
+        display: flex;
+        margin: 0 0 0 9px;
+        align-items: flex-end;
+        .num {
+          display: inline-block;
+          color: #06c1ae;
+          font-weight: 700;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 32px;
+        }
+        .cny {
+          display: inline-block;
+          color: #06c1ae;
+          font-weight: 400;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 13px;
+          margin: 0 0 3px 3px;
+        }
+      }
+      .counter_price {
+        margin: 14px 0 0 5px;
+        display: inline-block;
+        color: #999;
+        font-weight: 400;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+      }
+    }
+    .right {
 
+    }
+  }
+  .bottom {
+
+  }
+}
 </style>
