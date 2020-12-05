@@ -3663,91 +3663,268 @@ export default {
       ],
       all_cities_x: [
         {
-          name: "上海"
-        },
-        {
           name: "西安"
         },
         {
-          name: "西安"
+          name: "厦门"
         },
         {
-          name: "西安"
+          name: "徐州"
         },
         {
-          name: "西安123"
+          name: "襄阳"
         },
         {
-          name: "西安"
+          name: "新乡"
         },
         {
-          name: "西安"
+          name: "邢台"
         },
         {
-          name: "西安"
+          name: "宣城"
         },
         {
-          name: "西安"
+          name: "许昌"
         },
         {
-          name: "西安"
+          name: "信阳"
         },
         {
-          name: "西安"
+          name: "孝感"
         },
         {
-          name: "123"
+          name: "湘潭"
         },
         {
-          name: "西安"
+          name: "咸阳"
         },
         {
-          name: "123"
+          name: "西宁"
         },
         {
-          name: "西安"
+          name: "忻州"
         },
         {
-          name: "123"
+          name: "兴安盟"
         },
         {
-          name: "西安"
+          name: "新余"
         },
         {
-          name: "123"
+          name: "咸宁"
         },
         {
-          name: "西安"
+          name: "西双版纳"
         },
         {
-          name: "123"
+          name: "仙桃"
         },
         {
-          name: "西安"
+          name: "兴化"
         },
         {
-          name: "123"
+          name: "新泰"
         },
         {
-          name: "西安"
+          name: "辛集"
         },
         {
-          name: "123"
+          name: "新沂"
         },
         {
-          name: "西安"
+          name: "新郑"
         },
         {
-          name: "123"
+          name: "新密"
         },
         {
-          name: "西安"
+          name: "信宜"
         },
         {
-          name: "123"
+          name: "锡林郭勒"
         },
         {
-          name: "西安"
+          name: "湘西"
+        },
+        {
+          name: "湘阴"
+        },
+        {
+          name: "响水"
+        },
+        {
+          name: "荥阳"
+        },
+        {
+          name: "兴宁"
+        },
+        {
+          name: "新民"
+        },
+        {
+          name: "项城"
+        },
+        {
+          name: "孝义"
+        },
+        {
+          name: "湘乡"
+        },
+        {
+          name: "兴城"
+        },
+        {
+          name: "兴平"
+        },
+        {
+          name: "象山"
+        },
+        {
+          name: "修武"
+        },
+        {
+          name: "夏津"
+        },
+        {
+          name: "新化"
+        },
+        {
+          name: "仙居"
+        },
+        {
+          name: "襄垣"
+        },
+        {
+          name: "宣威"
+        },
+        {
+          name: "霞浦"
+        },
+        {
+          name: "新安"
+        },
+        {
+          name: "新乡县"
+        },
+        {
+          name: "盱眙"
+        },
+        {
+          name: "徐闻"
+        },
+        {
+          name: "夏邑"
+        },
+        {
+          name: "浚县"
+        },
+        {
+          name: "西乡"
+        },
+        {
+          name: "西平"
+        },
+        {
+          name: "新乐"
+        },
+        {
+          name: "新昌"
+        },
+        {
+          name: "薛城"
+        },
+        {
+          name: "西华"
+        },
+        {
+          name: "浠水"
+        },
+        {
+          name: "香河"
+        },
+        {
+          name: "信丰"
+        },
+        {
+          name: "新蔡"
+        },
+        {
+          name: "溆浦"
+        },
+        {
+          name: "淅川"
+        },
+        {
+          name: "新干"
+        },
+        {
+          name: "兴国县"
+        },
+        {
+          name: "新田"
+        },
+        {
+          name: "寻乌县"
+        },
+        {
+          name: "祥云县"
+        },
+        {
+          name: "襄城县"
+        },
+        {
+          name: "新宁"
+        },
+        {
+          name: "献县"
+        },
+        {
+          name: "新洲区"
+        },
+        {
+          name: "秀山土家族苗族自治县"
+        },
+        {
+          name: "新野"
+        },
+        {
+          name: "仙游县"
+        },
+        {
+          name: "新津区"
+        },
+        {
+          name: "旬阳县"
+        },
+        {
+          name: "孝昌县"
+        },
+        {
+          name: "息县"
+        },
+        {
+          name: "萧县"
+        },
+        {
+          name: "谢岗镇"
+        },
+        {
+          name: "兴义市"
+        },
+        {
+          name: "香港"
+        },
+        {
+          name: "香格里拉"
+        },
+        {
+          name: "西塘"
+        },
+        {
+          name: "新北"
+        },
+        {
+          name: "新竹市"
         }
       ],
       all_cities_y: [
