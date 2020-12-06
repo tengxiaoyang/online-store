@@ -82,12 +82,30 @@
         <a class="tag" 
           :class="{
             'tag-orange': item.type === 'orange', 
-            'tag-orange': item.type === 'orange'
+            'tag-grey': item.type === 'grey'
           }"
           href="item.href" 
           v-for="(item, index) of tag_content" 
           :key="index"
         >{{item.name}}{{item.count}}</a>
+      </div>
+    </div>
+    <div class="business_info">
+      <div class="top">商家信息</div>
+      <div class="bottom">
+        <div class="left">
+          <div class="name">鑫海汇海鲜烤肉火锅自助（立丰国际店）</div>
+          <div class="position">碑林区金花南路6号立丰国际购物广场6层</div>
+          <div class="nearest_to_me">
+            <div class="icon"></div>
+            <span class="text">离我最近</span>
+          </div>
+        </div>
+        <div class="right">
+          <div class="make_a_call_container">
+            <div class="make_a_call"></div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -110,58 +128,58 @@ export default {
           type: "orange"
         },
         {
-          name: "回头客",
-          count: "835",
+          name: "海鲜棒",
+          count: "390",
           href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
           type: "orange"
         },
         {
-          name: "回头客",
-          count: "835",
+          name: "朋友聚餐",
+          count: "126",
+          href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
+          type: "grey"
+        },
+        {
+          name: "不用排队",
+          count: "98",
           href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
           type: "orange"
         },
         {
-          name: "回头客",
-          count: "835",
+          name: "家庭聚餐",
+          count: "69",
+          href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
+          type: "grey"
+        },
+        {
+          name: "上菜快",
+          count: "49",
           href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
           type: "orange"
         },
         {
-          name: "回头客",
-          count: "835",
+          name: "停车方便",
+          count: "24",
           href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
           type: "orange"
         },
         {
-          name: "回头客",
-          count: "835",
+          name: "请客",
+          count: "13",
           href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
-          type: "orange"
+          type: "grey"
         },
         {
-          name: "回头客",
-          count: "835",
+          name: "公司聚餐",
+          count: "5",
           href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
-          type: "orange"
+          type: "grey"
         },
         {
-          name: "回头客",
-          count: "835",
+          name: "店内消毒",
+          count: "1",
           href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
-          type: "orange"
-        },
-        {
-          name: "回头客",
-          count: "835",
-          href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
-          type: "orange"
-        },
-        {
-          name: "回头客",
-          count: "835",
-          href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
-          type: "orange"
+          type: "grey"
         },
       ]
     }
@@ -554,32 +572,104 @@ export default {
     width: 100%;
     background: #fff;
     margin: 1px 0 0 0;
-    border-bottom: 1px solid #000;
     overflow: hidden;
-    padding: 0 5px;
+    padding: 6px 5px 14px;
     .tag {
-      border: 1px solid #acacac;
       border-radius: 3px;
-      color: #999;
       font-size: 14px;
       font-weight: 400;
       display: block;
       height: 30px;
       line-height: 30px;
       float: left;
-      margin: 9px 3px;
+      margin: 4px 3px;
+      padding: 0 5px;
+    }
+    .tag-grey {
+      border: 1px solid #acacac;
+      color: #999;
     }
     .tag-orange {
       border: 1px solid #fdb338;
-      border-radius: 3px;
       color: #fdb338;
-      font-size: 14px;
-      font-weight: 400;
-      display: block;
-      height: 30px;
-      line-height: 30px;
-      float: left;
-      margin: 9px 3px;
+    }
+  }
+}
+.business_info {
+  margin: 11px 0 0 0;
+  .top {
+    background: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 6px 9px;
+  }
+  .bottom {
+    width: 100%;
+    height: 100%;
+    margin: 1px 0 0 0;
+    display: flex;
+    padding: 10px 10px;
+    background: #fff;
+    .left {
+      max-width: calc(100% - 68px);
+      flex: 1;
+      line-height: 26px;
+      .name {
+        font-size: 16px;
+        font-weight: 800;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .position {
+        font-size: 14px;
+        font-weight: 400;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .nearest_to_me {
+        display: flex;
+        align-items: center;
+        .icon {
+          background-image: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@da8f38f);
+          background-position: 18px 18px;
+          background-size: 85px;
+          width: 18px;
+          height: 18px;
+        }
+        .text {
+          display: block;
+          font-size: 14px;
+          font-weight: 400;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #eb8706;
+          margin: 0 0 0 4px;
+        }
+      }
+    }
+    .right {
+      width: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .make_a_call_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        height: 70%;
+        border-left: 1px solid #ddd8ce;
+        .make_a_call {
+          background-image: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@da8f38f);
+          background-position: 35px 52px;
+          background-size: 75px;
+          width: 20px;
+          height: 20px;
+        }
+      }
     }
   }
 }
