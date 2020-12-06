@@ -167,6 +167,17 @@
         </div>
       </div>
     </div>
+    <div class="concrete_evaluation">
+      <div class="title">评价</div>
+      <div class="content">
+        <div class="item"
+          v-for="(item, index) of evaluation_content" 
+          :key="index"
+        >
+        
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -277,6 +288,17 @@ export default {
         },
         {
           text: "商家提供免费WiFi"
+        }
+      ],
+      evaluation_content: [
+        {
+
+        },
+        {
+
+        },
+        {
+          
         }
       ]
     }
@@ -966,6 +988,18 @@ export default {
         }
       }
     }
+  }
+}
+.concrete_evaluation {
+  margin: 11px 0 0 0;
+  .title {
+    background: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 11px 9px;
+  }
+  .content {
+
   }
 }
 </style>
