@@ -66,13 +66,38 @@
     <div class="evaluate">
       <div class="top">
         <div class="stars">
-          <i class="star-orange"></i>
-          <i class="star-orange"></i>
-          <i class="star-orange"></i>
-          <i class="star-orange"></i>
-          <i class="star-grey"></i>
+          <i 
+            :class="{
+              'star-orange': overall_score >= 1,
+              'star-grey': overall_score < 1,
+            }"
+          ></i>
+          <i 
+            :class="{
+              'star-orange': overall_score >= 2,
+              'star-grey': overall_score < 2,
+            }"
+          ></i>
+          <i 
+            :class="{
+              'star-orange': overall_score >= 3,
+              'star-grey': overall_score < 3,
+            }"
+          ></i>
+          <i 
+            :class="{
+              'star-orange': overall_score >= 4,
+              'star-grey': overall_score < 4,
+            }"
+          ></i>
+          <i 
+            :class="{
+              'star-orange': overall_score >= 5,
+              'star-grey': overall_score < 5,
+            }"
+          ></i>
         </div>
-        <div class="score">4.1</div>
+        <div class="score">{{overall_score}}</div>
         <div class="evaluator">
           <span>17660人评价</span>
           <div class="arrow"></div>
@@ -174,7 +199,7 @@
           v-for="(item, index) of evaluation_content" 
           :key="index"
         >
-        
+
         </div>
       </div>
     </div>
@@ -190,6 +215,7 @@ export default {
   name: 'group_buying_details',
   data() {
     return {
+      overall_score: 4.1,
       tag_content: [
         {
           name: "回头客",
