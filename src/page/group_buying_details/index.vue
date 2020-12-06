@@ -108,6 +108,30 @@
         </div>
       </div>
     </div>
+    <div class="set_meal">
+      <div class="title">套餐</div>
+      <div class="content">
+        <div class="left">单人自助晚餐</div>
+        <div class="middle">1 位</div>
+        <div class="right">86元</div>
+      </div>
+      <div class="comments">
+        <div class="title">备注</div>
+        <div class="content">
+          <ul>
+            <li
+              v-for="(item, index) of comment_content" 
+              :key="index"
+            >
+              <div class="point"></div>
+              <span>
+                {{item.text}}
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -181,6 +205,14 @@ export default {
           href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
           type: "grey"
         },
+      ],
+      comment_content: [
+        {
+          text: "单人自助晚餐：17:00-22:00"
+        },
+        {
+          text: "为了响应“光盘”号召和避免浪费，就餐前每位需10元押金，餐后无浪费将会全部退还"
+        }
       ]
     }
   },
@@ -668,6 +700,96 @@ export default {
           background-size: 75px;
           width: 20px;
           height: 20px;
+        }
+      }
+    }
+  }
+}
+.set_meal {
+  margin: 11px 0 0 0;
+  .title {
+    background: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 6px 9px;
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+    margin: 1px 0 0 0;
+    display: flex;
+    padding: 0 10px;
+    background: #fff;
+    line-height: 40px;
+    .left {
+      width: 50%;
+      font-size: 15px;
+      font-weight: 400;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .middle {
+      width: 30%;
+      font-size: 15px;
+      font-weight: 400;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      border-left: 1px solid #ccc;
+      padding: 0 0 0 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .right {
+      width: 20%;
+      font-size: 15px;
+      font-weight: 400;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      border-left: 1px solid #ccc;
+      padding: 0 0 0 10px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  }
+  .comments {
+    margin: 1px 0 0 0;
+    .title {
+      background: #fff;
+      font-size: 15px;
+      font-weight: 400;
+      padding: 6px 9px;
+      text-align: center;
+      background-color: #f8f9fa;
+    }
+    .content {
+      width: 100%;
+      height: 100%;
+      margin: 1px 0 0 0;
+      padding: 0;
+      display: flex;
+      background: #fff;
+      line-height: 40px;
+      ul {
+        list-style: none;
+        padding: 15px 11px;
+        li {
+          display: flex;
+          .point {
+            width: 4px;
+            height: 4px;
+            background: #333;
+            border-radius: 100%;
+            margin: 12px 7px 0;
+          }
+          span {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 23px;
+            max-width: calc(100% - 20px);
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          }
         }
       }
     }
