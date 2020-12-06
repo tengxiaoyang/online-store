@@ -131,6 +131,41 @@
           </ul>
         </div>
       </div>
+      <div class="view_graphic_details">
+        <span class="text">查看图文详情</span>
+        <div class="arrow"></div>
+      </div>
+    </div>
+    <div class="purchase_notes">
+      <div class="title">购买须知</div>
+      <div class="indate">
+        <div class="name">有效期</div>
+        <div class="content">
+          <ul>
+            <li>
+              <span>
+                {{indate_content}}
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="service_regulations">
+        <div class="name">使用规则</div>
+        <div class="content">
+          <ul>
+            <li
+              v-for="(item, index) of service_regulations_content" 
+              :key="index"
+            >
+              <div class="point"></div>
+              <span>
+                {{item.text}}
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -212,6 +247,36 @@ export default {
         },
         {
           text: "为了响应“光盘”号召和避免浪费，就餐前每位需10元押金，餐后无浪费将会全部退还"
+        }
+      ],
+      indate_content: "2015.5.12 至 2020.12.15 23:59（周末、法定节假日通用）",
+      service_regulations_content: [
+        {
+          text: "每张美团券最多1位成人使用，身高1.2米以上儿童计入人数"
+        },
+        {
+          text: "无需预约，消费高峰期可能需要等位"
+        },
+        {
+          text: "1.2米以下儿童免费，1.2-1.4米儿童46元/位，1.4米以上儿童全票"
+        },
+        {
+          text: "65岁以上持有效证件46元/位"
+        },
+        {
+          text: "寿星凭有效证件46元元/位"
+        },
+        {
+          text: "购买用户不可同时享受商家其他优惠"
+        },
+        {
+          text: "部分菜品因时令原因有所不同，请以店内当日实际供应为准"
+        },
+        {
+          text: "使用优惠券购买团单，有效期以优惠券规则为准"
+        },
+        {
+          text: "商家提供免费WiFi"
         }
       ]
     }
@@ -633,7 +698,7 @@ export default {
     background: #fff;
     font-size: 17px;
     font-weight: 400;
-    padding: 6px 9px;
+    padding: 11px 9px;
   }
   .bottom {
     width: 100%;
@@ -711,7 +776,7 @@ export default {
     background: #fff;
     font-size: 17px;
     font-weight: 400;
-    padding: 6px 9px;
+    padding: 11px 9px;
   }
   .content {
     width: 100%;
@@ -774,6 +839,114 @@ export default {
       ul {
         list-style: none;
         padding: 15px 11px;
+        li {
+          display: flex;
+          .point {
+            width: 4px;
+            height: 4px;
+            background: #333;
+            border-radius: 100%;
+            margin: 12px 7px 0;
+          }
+          span {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 23px;
+            max-width: calc(100% - 20px);
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          }
+        }
+      }
+    }
+  }
+  .view_graphic_details {
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #DDD8CE;
+    padding: 10px 22px 10px 10px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin: 1px 0 0 0;
+    .text {
+      flex: 1;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      color: #06c1ae;
+    }
+    .arrow {
+      position: relative;
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-left: 3px solid #06c1ae;
+      border-bottom: 3px solid #06c1ae;
+      transform: scaleY(0.7) rotateZ(-135deg);
+    }
+  }
+}
+.purchase_notes {
+  margin: 11px 0 0 0;
+  .title {
+    background: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 11px 9px;
+  }
+  .indate {
+    margin: 1px 0 0 0;
+    padding: 12px 0 0 0;
+    background: #fff;
+    .name {
+      background: #fff;
+      font-size: 15px;
+      font-weight: 400;
+      padding: 0 9px;
+      color: #f90;
+    }
+    .content {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      display: flex;
+      background: #fff;
+      line-height: 40px;
+      ul {
+        list-style: none;
+        padding: 10px 11px 15px;
+        li {
+          display: flex;
+          span {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 23px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0 0 0 7px;
+          }
+        }
+      }
+    }
+  }
+  .service_regulations {
+    background: #fff;
+    .name {
+      background: #fff;
+      font-size: 15px;
+      font-weight: 400;
+      padding: 0 9px;
+      color: #f90;
+    }
+    .content {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      display: flex;
+      background: #fff;
+      line-height: 40px;
+      ul {
+        list-style: none;
+        padding: 10px 11px 15px;
         li {
           display: flex;
           .point {
