@@ -72,8 +72,23 @@
           <i class="star-orange"></i>
           <i class="star-grey"></i>
         </div>
+        <div class="score">4.1</div>
+        <div class="evaluator">
+          <span>17660人评价</span>
+          <div class="arrow"></div>
+        </div>
       </div>
-      <div class="bottom"></div>
+      <div class="bottom">
+        <a class="tag" 
+          :class="{
+            'tag-orange': item.type === 'orange', 
+            'tag-orange': item.type === 'orange'
+          }"
+          href="item.href" 
+          v-for="(item, index) of tag_content" 
+          :key="index"
+        >{{item.name}}{{item.count}}</a>
+      </div>
     </div>
   </div>
 </template>
@@ -87,7 +102,68 @@ export default {
   name: 'group_buying_details',
   data() {
     return {
-      
+      tag_content: [
+        {
+          name: "回头客",
+          count: "835",
+          href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
+          type: "orange"
+        },
+        {
+          name: "回头客",
+          count: "835",
+          href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
+          type: "orange"
+        },
+        {
+          name: "回头客",
+          count: "835",
+          href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
+          type: "orange"
+        },
+        {
+          name: "回头客",
+          count: "835",
+          href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
+          type: "orange"
+        },
+        {
+          name: "回头客",
+          count: "835",
+          href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
+          type: "orange"
+        },
+        {
+          name: "回头客",
+          count: "835",
+          href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
+          type: "orange"
+        },
+        {
+          name: "回头客",
+          count: "835",
+          href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
+          type: "orange"
+        },
+        {
+          name: "回头客",
+          count: "835",
+          href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
+          type: "orange"
+        },
+        {
+          name: "回头客",
+          count: "835",
+          href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
+          type: "orange"
+        },
+        {
+          name: "回头客",
+          count: "835",
+          href: "https://i.meituan.com/deal/29242714/feedback?label=%E5%9B%9E%E5%A4%B4%E5%AE%A2&stid=019032296837928515275757042931456002187_c0_e2f22a965f9d1f211cd684b828e874a4e",
+          type: "orange"
+        },
+      ]
     }
   },
   computed: {
@@ -116,6 +192,7 @@ export default {
 <style lang="less" scoped>
 .group_buying_details {
   background: #f0f0f0;
+  height: 100%;
 }
 .header {
   width: 100%;
@@ -411,30 +488,99 @@ export default {
 }
 .evaluate {
   width: 100%;
-  height: 40px;
+  height: 100%;
   margin: 11px 0 0 0;
   .top {
     width: 100%;
-    height: 30px;
+    height: 50px;
     background: #fff;
+    display: flex;
     .stars {
+      display: flex;
+      align-items: center;
+      margin: 0 0 0 8px;
       .star-orange {
         background: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/cb45534a7d3737c0.png@da8f38f);
-        background-size: 20px;
-        width: 20px;
-        height: 20px;
+        background-size: 16px;
+        width: 16px;
+        height: 16px;
         display: inline-block;
+        margin: 0 1px;
       }
       .star-grey {
-        
+        background: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/e076efca46320452.png@da8f38f);
+        background-size: 16px;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        margin: 0 1px;
+      }
+    }
+    .score {
+      color: #fa952f;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 50px;
+      margin: 0 0 0 6px;
+    }
+    .evaluator {
+      flex: 1;
+      text-align: right;
+      display: flex;
+      align-items: center;
+      span {
+        flex: 1;
+        color: #999;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: 0 0 0 6px;
+      }
+      .arrow {
+        position: relative;
+        display: block;
+        width: 11px;
+        height: 11px;
+        border-left: 3px solid #999;
+        border-bottom: 3px solid #999;
+        -ms-transform: scaleY(0.7) rotate(-135deg);
+        transform: scaleY(0.7) rotateZ(-135deg);
+        margin: 0 12px 0 4px;
       }
     }
   }
   .bottom {
     width: 100%;
-    height: 30px;
     background: #fff;
     margin: 1px 0 0 0;
+    border-bottom: 1px solid #000;
+    overflow: hidden;
+    padding: 0 5px;
+    .tag {
+      border: 1px solid #acacac;
+      border-radius: 3px;
+      color: #999;
+      font-size: 14px;
+      font-weight: 400;
+      display: block;
+      height: 30px;
+      line-height: 30px;
+      float: left;
+      margin: 9px 3px;
+    }
+    .tag-orange {
+      border: 1px solid #fdb338;
+      border-radius: 3px;
+      color: #fdb338;
+      font-size: 14px;
+      font-weight: 400;
+      display: block;
+      height: 30px;
+      line-height: 30px;
+      float: left;
+      margin: 9px 3px;
+    }
   }
 }
 </style>
