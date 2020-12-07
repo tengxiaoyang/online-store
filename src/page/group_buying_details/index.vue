@@ -30,36 +30,36 @@
         <img src="http://p0.meituan.net/deal/340b857ba4d97eefd17372a2438ed23d100485.jpg" alt="">
         <div class="shadow"></div>
         <div class="title_and_type">
-          <div class="title">鑫海汇海鲜烤肉火锅自助</div>
+          <div class="title">{{product_name}}</div>
           <span class="product_type">单人自助晚餐</span>
         </div>
       </div>
-      <div class="price_and_purchase">
-        <div class="top">
-          <div class="left">
-            <div class="price">
-              <span class="num">66.9</span>
-              <span class="cny">元</span>
-            </div>
-            <div class="counter_price">门市价:86元</div>
-          </div>
-          <div class="right">
-            <div class="purchase">立即抢购</div>
-          </div>
+    </div>
+    <div class="price_and_purchase_top">
+      <div class="left">
+        <div class="price">
+          <span class="num">66.9</span>
+          <span class="cny">元</span>
         </div>
-        <div class="bottom">
-          <div class="refund_anytime">
-            <span class="icon"></span>
-            <span class="text">支持随时退款</span>
-          </div>
-          <div class="automatic_refund">
-            <span class="icon"></span>
-            <span class="text">支持过期自动退</span>
-          </div>
-          <div class="sold">
-            <span class="icon"></span>
-            <span class="text">已售199483</span>
-          </div>
+        <div class="counter_price">门市价:86元</div>
+      </div>
+      <div class="right">
+        <div class="purchase">立即抢购</div>
+      </div>
+    </div>
+    <div class="price_and_purchase">
+      <div class="bottom">
+        <div class="refund_anytime">
+          <span class="icon"></span>
+          <span class="text">支持随时退款</span>
+        </div>
+        <div class="automatic_refund">
+          <span class="icon"></span>
+          <span class="text">支持过期自动退</span>
+        </div>
+        <div class="sold">
+          <span class="icon"></span>
+          <span class="text">已售199483</span>
         </div>
       </div>
     </div>
@@ -99,7 +99,7 @@
         </div>
         <div class="score">{{overall_score}}</div>
         <div class="evaluator">
-          <span>17660人评价</span>
+          <span>{{num_of_evaluations}}人评价</span>
           <div class="arrow"></div>
         </div>
       </div>
@@ -193,13 +193,130 @@
       </div>
     </div>
     <div class="concrete_evaluation">
-      <div class="title">评价</div>
+      <div class="title">
+        <span>评价</span>
+        <div class="stars">
+          <i 
+            :class="{
+              'star-orange': overall_score >= 1,
+              'star-grey': overall_score < 1,
+            }"
+          ></i>
+          <i 
+            :class="{
+              'star-orange': overall_score >= 2,
+              'star-grey': overall_score < 2,
+            }"
+          ></i>
+          <i 
+            :class="{
+              'star-orange': overall_score >= 3,
+              'star-grey': overall_score < 3,
+            }"
+          ></i>
+          <i 
+            :class="{
+              'star-orange': overall_score >= 4,
+              'star-grey': overall_score < 4,
+            }"
+          ></i>
+          <i 
+            :class="{
+              'star-orange': overall_score >= 5,
+              'star-grey': overall_score < 5,
+            }"
+          ></i>
+        </div>
+        <div class="score">{{overall_score}}</div>
+      </div>
       <div class="content">
         <div class="item"
           v-for="(item, index) of evaluation_content" 
           :key="index"
         >
-
+          <div class="user">
+            <div class="left">
+              <img :src="item.icon" alt="">
+            </div>
+            <div class="right">
+              <div class="top">{{item.name}}</div>
+              <div class="bottom">
+                <div class="stars">
+                  <i 
+                    :class="{
+                      'star-orange': item.score >= 1,
+                      'star-grey': item.score < 1,
+                    }"
+                  ></i>
+                  <i 
+                    :class="{
+                      'star-orange': item.score >= 2,
+                      'star-grey': item.score < 2,
+                    }"
+                  ></i>
+                  <i 
+                    :class="{
+                      'star-orange': item.score >= 3,
+                      'star-grey': item.score < 3,
+                    }"
+                  ></i>
+                  <i 
+                    :class="{
+                      'star-orange': item.score >= 4,
+                      'star-grey': item.score < 4,
+                    }"
+                  ></i>
+                  <i 
+                    :class="{
+                      'star-orange': item.score >= 5,
+                      'star-grey': item.score < 5,
+                    }"
+                  ></i>
+                </div>
+                <div class="date">{{item.date}}</div>
+              </div>
+            </div>
+          </div>
+          <div class="text">{{item.text}}</div>
+          <div class="photo_container">
+            <img :src="photo_item.url" alt="" 
+              v-for="(photo_item, photo_index) of item.photo" 
+              :key="photo_index"
+            >
+          </div>
+          <div class="position"></div>
+        </div>
+      </div>
+      <div class="view_all_reviews">
+        <span class="text">查看全部{{num_of_evaluations}}条评价</span>
+        <div class="arrow"></div>
+      </div>
+    </div>
+    <div class="related_suggestion">
+      <div class="title">
+        <span>[{{product_name}}]相关推荐</span>
+      </div>
+      <div class="content">
+        <div class="item"
+          v-for="(item, index) of suggestion_content" 
+          :key="index"
+        >
+          <div class="left">
+            <span></span>
+          </div>
+          <div class="right">
+            <div class="title">[{{item.position}}]{{item.name}}</div>
+            <div class="bottom">
+              <div class="price">
+                <span class="num">{{item.price}}</span>
+                <span class="text">元</span>
+              </div>
+              <div class="counter_price">
+                <span class="text">门市价:{{item.counter_price}}元</span>
+              </div>
+              <div class="sold">已售{{item.sold}}</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -215,6 +332,7 @@ export default {
   name: 'group_buying_details',
   data() {
     return {
+      product_name: "鑫海汇海鲜烤肉火锅自助",
       overall_score: 4.1,
       tag_content: [
         {
@@ -318,13 +436,108 @@ export default {
       ],
       evaluation_content: [
         {
-
+          icon: "https://img.meituan.net/avatar/71f6812a9354513c977da2babc5e9c5558645.jpg@148w_148h_1e_1c",
+          name: "wlxstb",
+          score: 5,
+          date: "2020-12-04",
+          text: "经常吃的一家自助餐厅，位置好，交通便利，食材品种多，味道好！",
+          photo: [
+            {
+              url: "http://p1.meituan.net/shaitu/f6a244a8ce809fd9b6d42070b91f1d0f3181202.jpg@220w_220h_1e_1c"
+            },
+            {
+              url: "http://p0.meituan.net/shaitu/e572b9760ba007b5aa8960b45a82df2f2549946.jpg@220w_220h_1e_1c"
+            }
+          ],
+          position: "鑫海汇海鲜烤肉火锅自助（立丰国际店）"
         },
         {
-
+          icon: "http://p1.meituan.net/mmc/9eb02e99626203347ba0237ac7699f924241.png@148w_148h_1e_1c",
+          name: "扑通c",
+          score: 5,
+          date: "2020-11-13",
+          text: "菜的种类还挺多的，周内吃也很划算。离得也比较近，但下午的菜感觉很多不是很新鲜了，可能是周内人比较少的原因。总体来说性价比还行，可可可可可可可可可可可可可可可可可",
+          photo: [
+            {
+              url: "http://p0.meituan.net/shaitu/4b4a4c7c86a46aa2ad71c05d46777d8c286096.jpg@220w_220h_1e_1c"
+            },
+            {
+              url: "http://p0.meituan.net/shaitu/373d4409855bc302ae319a79bb99f228412831.jpg@220w_220h_1e_1c"
+            }
+          ],
+          position: "鑫海汇海鲜烤肉火锅自助（立丰国际店）"
         },
         {
-          
+          icon: "http://p1.meituan.net/mmc/e663563d638f3f2c56274e28ac949a143761.png@148w_148h_1e_1c",
+          name: "jXz945385036",
+          score: 5,
+          date: "2020-12-04",
+          text: "第一次来，服务态度很好，菜品丰盛，很赞",
+          photo: [
+            {
+              url: "http://p1.meituan.net/shaitu/11c752ea1f1063ad5f628301aa1b0e8a3432519.jpg@220w_220h_1e_1c"
+            }
+          ],
+          position: "鑫海汇海鲜烤肉火锅自助（立丰国际店）"
+        }
+      ],
+      num_of_evaluations: 17663,
+      suggestion_content: [
+        {
+          position: "立丰国际",
+          name: "周内单人自助午餐",
+          price: 59.9,
+          counter_price: 76,
+          sold: 43657
+        },
+        {
+          position: "电视台/会展中心",
+          name: "单人自助餐",
+          price: 59,
+          counter_price: 99,
+          sold: 1024
+        },
+        {
+          position: "立丰国际",
+          name: "单人晚餐自助",
+          price: 66.9,
+          counter_price: 85,
+          sold: 163453
+        },
+        {
+          position: "立丰国际",
+          name: "学生单人自助餐",
+          price: 54.9,
+          counter_price: 85,
+          sold: 5919
+        },
+        {
+          position: "交大东校区/理工大",
+          name: "学生专用特惠周内自助餐",
+          price: 49,
+          counter_price: 69,
+          sold: 648
+        },
+        {
+          position: "交大东校区/理工大",
+          name: "周内晚市",
+          price: 57.1,
+          counter_price: 69,
+          sold: 1535
+        },
+        {
+          position: "交大东校区/理工大",
+          name: "周六周日法定节假日通用",
+          price: 57.1,
+          counter_price: 69,
+          sold: 8022
+        },
+        {
+          position: "曲江新区",
+          name: "周内自助/周末及节假日2选1",
+          price: 56.9,
+          counter_price: 59,
+          sold: 126548
         }
       ]
     }
@@ -340,6 +553,10 @@ export default {
     }
   },
   created(){
+    // window.scrollTo({
+    //   'top': 0,
+    //   // 'behavior': 'smooth'
+    // });
     //进入题目页面，开始计时
     // this.$store.commit('REMBER_TIME');
   },
@@ -516,135 +733,138 @@ export default {
       }
     }
   }
-  .price_and_purchase {
-    width: 100%;
-    height: 100%;
-    .top {
+}
+.price_and_purchase_top {
+  display: flex;
+  background: #fff;
+  position: sticky;
+  top: -1px;
+  z-index: 3;
+  border-bottom: 1px solid #f0f0f0;
+  .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    .price {
       display: flex;
-      background: #fff;
-      .left {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        height: 60px;
-        .price {
-          display: flex;
-          margin: 0 0 0 9px;
-          align-items: flex-end;
-          .num {
-            display: inline-block;
-            color: #06c1ae;
-            font-weight: 700;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-size: 32px;
-          }
-          .cny {
-            display: inline-block;
-            color: #06c1ae;
-            font-weight: 400;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            font-size: 13px;
-            margin: 0 0 3px 3px;
-          }
-        }
-        .counter_price {
-          margin: 14px 0 0 5px;
-          display: inline-block;
-          color: #999;
-          font-weight: 400;
-          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-          font-size: 13px;
-        }
+      margin: 0 0 0 9px;
+      align-items: flex-end;
+      .num {
+        display: inline-block;
+        color: #06c1ae;
+        font-weight: 700;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 32px;
       }
-      .right {
-        width: 140px;
-        display: flex;
-        align-items: center;
-        height: 60px;
-        .purchase {
-          background: #f90;
-          width: 130px;
-          height: 40px;
-          text-align: center;
-          line-height: 40px;
-          color: #fff;
-          border-radius: 3px;
-          font-size: 20px;
-          font-weight: 400;
-        }
+      .cny {
+        display: inline-block;
+        color: #06c1ae;
+        font-weight: 400;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        margin: 0 0 3px 3px;
       }
     }
-    .bottom {
-      padding: 17px 9px;
-      height: 100%;
-      overflow: hidden;
-      background: #fff;
-      margin: 1px 0 0 0;
-      .refund_anytime {
-        width: 50%;
-        float: left;
-        display: flex;
-        height: 30px;
-        .icon {
-          background-image: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@da8f38f);
-          background-position: 208px 23px;
-          background-size: 115px;
-          width: 24px;
-          height: 24px;
-          display: inline-block;
-          vertical-align: middle;
-        }
-        .text {
-          color: #6bbd00;
-          font-size: 14px;
-          font-weight: 400;
-          vertical-align: middle;
-          margin: 0 0 0 3px;
-        }
+    .counter_price {
+      margin: 14px 0 0 5px;
+      display: inline-block;
+      color: #999;
+      font-weight: 400;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 13px;
+    }
+  }
+  .right {
+    width: 140px;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    .purchase {
+      background: #f90;
+      width: 130px;
+      height: 40px;
+      text-align: center;
+      line-height: 40px;
+      color: #fff;
+      border-radius: 3px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
+.price_and_purchase {
+  width: 100%;
+  height: 100%;
+  .bottom {
+    padding: 17px 9px;
+    height: 100%;
+    overflow: hidden;
+    background: #fff;
+    .refund_anytime {
+      width: 50%;
+      float: left;
+      display: flex;
+      height: 30px;
+      .icon {
+        background-image: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@da8f38f);
+        background-position: 208px 23px;
+        background-size: 115px;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: middle;
       }
-      .automatic_refund {
-        width: 50%;
-        float: left;
-        display: flex;
-        height: 30px;
-        .icon {
-          background-image: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@da8f38f);
-          background-position: 185px 23px;
-          background-size: 115px;
-          width: 24px;
-          height: 24px;
-          display: inline-block;
-          vertical-align: middle;
-        }
-        .text {
-          color: #6bbd00;
-          font-size: 14px;
-          font-weight: 400;
-          vertical-align: middle;
-          margin: 0 0 0 3px;
-        }
+      .text {
+        color: #6bbd00;
+        font-size: 14px;
+        font-weight: 400;
+        vertical-align: middle;
+        margin: 0 0 0 3px;
       }
-      .sold {
-        width: 50%;
-        float: left;
-        display: flex;
-        height: 30px;
-        .icon {
-          background-image: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@da8f38f);
-          background-position: 162px 23px;
-          background-size: 115px;
-          width: 24px;
-          height: 24px;
-          display: inline-block;
-          vertical-align: middle;
-        }
-        .text {
-          color: #666;
-          font-size: 14px;
-          font-weight: 400;
-          vertical-align: middle;
-          margin: 0 0 0 3px;
-        }
+    }
+    .automatic_refund {
+      width: 50%;
+      float: left;
+      display: flex;
+      height: 30px;
+      .icon {
+        background-image: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@da8f38f);
+        background-position: 185px 23px;
+        background-size: 115px;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .text {
+        color: #6bbd00;
+        font-size: 14px;
+        font-weight: 400;
+        vertical-align: middle;
+        margin: 0 0 0 3px;
+      }
+    }
+    .sold {
+      width: 50%;
+      float: left;
+      display: flex;
+      height: 30px;
+      .icon {
+        background-image: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@da8f38f);
+        background-position: 162px 23px;
+        background-size: 115px;
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .text {
+        color: #666;
+        font-size: 14px;
+        font-weight: 400;
+        vertical-align: middle;
+        margin: 0 0 0 3px;
       }
     }
   }
@@ -1020,12 +1240,244 @@ export default {
   margin: 11px 0 0 0;
   .title {
     background: #fff;
-    font-size: 17px;
-    font-weight: 400;
     padding: 11px 9px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    span {
+      font-size: 17px;
+      font-weight: 400;
+      flex: 1;
+    }
+    .stars {
+      display: flex;
+      align-items: center;
+      margin: 0 0 0 8px;
+      .star-orange {
+        background: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/cb45534a7d3737c0.png@da8f38f);
+        background-size: 16px;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        margin: 0 1px;
+      }
+      .star-grey {
+        background: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/e076efca46320452.png@da8f38f);
+        background-size: 16px;
+        width: 16px;
+        height: 16px;
+        display: inline-block;
+        margin: 0 1px;
+      }
+    }
+    .score {
+      color: #fa952f;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 50px;
+      margin: 0 0 0 6px;
+    }
   }
   .content {
-
+    .item {
+      margin: 1px 0 0 0;
+      background: #fff;
+      padding: 12px 8px;
+      .user {
+        display: flex;
+        .left {
+          width: 37px;
+          height: 37px;
+          border-radius: 100%;
+          img {
+            object-fit: cover;
+            width: 100%;
+            border-radius: 100%;
+          }
+        }
+        .right {
+          margin: 0 0 0 4px;
+          .top {
+            font-size: 12px;
+            font-weight: 400;
+          }
+          .bottom {
+            display: flex;
+            margin: 3px 0 0 0;
+            .stars {
+              display: flex;
+              align-items: center;
+              .star-orange {
+                background: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/cb45534a7d3737c0.png@da8f38f);
+                background-size: 14px;
+                width: 14px;
+                height: 14px;
+                display: inline-block;
+                margin: 0 1px;
+              }
+              .star-grey {
+                background: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/e076efca46320452.png@da8f38f);
+                background-size: 16px;
+                width: 16px;
+                height: 16px;
+                display: inline-block;
+                margin: 0 1px;
+              }
+            }
+            .date {
+              color: #999;
+              font-size: 12px;
+              font-weight: 400;
+              margin: 0 0 0 8px;
+            }
+          }
+        }
+      }
+      .text {
+        font-size: 15px;
+        font-weight: 400;
+        margin: 10px 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      .photo_container {
+        display: flex;
+        img {
+          object-fit: cover;
+          width: 55px;
+          height: 55px;
+          margin: 0 5px 0 0;
+        }
+      }
+    }
+  }
+  .view_all_reviews {
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #DDD8CE;
+    padding: 10px 22px 10px 10px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin: 1px 0 0 0;
+    .text {
+      flex: 1;
+      font-size: 15px;
+      font-weight: 400;
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      color: #06c1ae;
+    }
+    .arrow {
+      position: relative;
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-left: 3px solid #06c1ae;
+      border-bottom: 3px solid #06c1ae;
+      transform: scaleY(0.7) rotateZ(-135deg);
+    }
+  }
+}
+.related_suggestion {
+  margin: 11px 0 0 0;
+  .title {
+    background: #fff;
+    padding: 11px 9px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    span {
+      font-size: 17px;
+      font-weight: 400;
+      flex: 1;
+    }
+  }
+  .content {
+    .item {
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+      border-bottom: 1px solid #DDD8CE;
+      background: #fff;
+      .left {
+        width: 22px;
+        position: relative;
+        bottom: 1px;
+        span {
+          background-image: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/94a35bd5a3c8b11f.png@da8f38f);
+          background-position: 17px 46px;
+          background-size: 83px;
+          width: 17px;
+          height: 18px;
+          display: block;
+          margin: 2px 0 0 6px;
+        }
+      }
+      .right {
+        flex: 1;
+        padding: 0 10px 0 6px;
+        .title {
+          font-size: 15px;
+          font-weight: 400;
+          margin: 1px 0 0 1px;
+          padding: 0;
+          height: 21px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #666;
+        }
+        .bottom {
+          display: flex;
+          position: relative;
+          align-items: flex-end;
+          margin: 4px 0 2px 0;
+          .price {
+            display: flex;
+            align-items: flex-end;
+            height: 19px;
+            .num {
+              font-size: 19px;
+              font-weight: 500;
+              font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+              line-height: 17px;
+              color: #06c1ae;
+              margin: 0 0 0 1px;
+            }
+            .text {
+              font-size: 12px;
+              font-weight: 400;
+              font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+              color: #06c1ae;
+              line-height: 13px;
+            }
+          }
+          .counter_price {
+            display: flex;
+            position: relative;
+            align-items: flex-end;
+            margin: 0 0 0 4px;
+            .text {
+              font-size: 12px;
+              font-weight: 400;
+              font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+              color: #666;
+              line-height: 13px;
+            }
+          }
+          .sold {
+            font-size: 12px;
+            font-weight: 400;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            line-height: 20px;
+            flex: 1;
+            text-align: end;
+            color: #666;
+            margin: 0 9px 0 0;
+          }
+        }
+      }
+    }
   }
 }
 </style>
