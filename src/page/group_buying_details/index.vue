@@ -320,14 +320,31 @@
         </div>
       </div>
     </div>
+    <div class="guess_you_like">
+      <div class="title">
+        <span class="left">看了本团购的用户还看了</span>
+        <span class="right">广告</span>
+      </div>
+      <GuessYouLike  
+        v-for="(guess_content_item, guess_content_index) of guess_content" 
+        :key="guess_content_index"
+        :guess_content="guess_content_item"
+      ></GuessYouLike>
+    </div>
+    <div class="current_position">当前位置：{{selected_city}}团购 > {{product_name}}团购</div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 import AppBannerGreen from "../../component/AppBannerGreen";
+import GuessYouLike from "../../component/GuessYouLike";
+import Footer from "../../component/Footer";
 export default {
   components: {
-    AppBannerGreen
+    AppBannerGreen,
+    GuessYouLike,
+    Footer
   },
   name: 'group_buying_details',
   data() {
@@ -538,6 +555,108 @@ export default {
           price: 56.9,
           counter_price: 59,
           sold: 126548
+        }
+      ],
+      guess_content: [
+        {
+          id: 20,
+          img: "http://p0.meituan.net/200.0/deal/e812ae993fe8c37166b70cdd6f9b39a148507.jpg@120_0_400_400a%7C267h_267w_2e_100q",
+          name: "吸血鬼猫咪餐厅",
+          place: "[小寨]3人牛排套餐，包间免费",
+          price: "178",
+          counter_price: "门市价:578元",
+          sold: "1009"
+        },
+        {
+          id: 21,
+          img: "http://p1.meituan.net/200.0/deal/d57b348e3e4b2ba6d401cd700da0e450171479.jpg@525_0_1617_1617a%7C267h_267w_2e_90Q",
+          name: "一只酸奶牛",
+          place: "[西安等]紫米露系列3选1",
+          price: "10.8",
+          counter_price: "门市价:12元",
+          sold: "583555"
+        },
+        {
+          id: 22,
+          img: "http://p0.meituan.net/200.0/dpdeal/08ebd2bf79e4fe927041f25ef45e6d79173510.jpg",
+          name: "静心美容养生全国连锁",
+          place: "[4店通用]单人特色面部水疗+淋巴调理+面膜",
+          price: "69.9",
+          counter_price: "门市价:298元",
+          sold: "1381"
+        },
+        {
+          id: 23,
+          img: "http://p1.meituan.net/200.0/deal/3874c41cb8756487564c1e25263862e8121539.jpg@174_0_586_586a%7C267h_267w_2e_90Q",
+          name: "迈德思客",
+          place: "[西安等]香辣鸡腿堡套餐，建议单人使用",
+          price: "15",
+          counter_price: "门市价:21.5元",
+          sold: "744723"
+        },
+        {
+          id: 24,
+          img: "http://p0.meituan.net/200.0/dpdeal/b413aae654c785481fbc63bfde1be8c1250142.jpg",
+          name: "苗谣姿然专业祛痘旗舰店",
+          place: "[小寨]单人淡化痘印/深层补水/去黑头深层清洁3选1套餐",
+          price: "68",
+          counter_price: "门市价:498元",
+          sold: "204"
+        },
+        {
+          id: 25,
+          img: "http://p0.meituan.net/200.0/deal/f0e987f7be1302ab6aa0e29c656bb44c36518.jpg",
+          name: "百富烤霸",
+          place: "[西安等]烤鸡堡单人餐，提供免费WiFi",
+          price: "19",
+          counter_price: "门市价:41.5元",
+          sold: "283118"
+        },
+        {
+          id: 26,
+          img: "https://p0.meituan.net/200.0/merchantpic/093af73a31fc95dfcf8fd68f7d1fd56c315199.jpg",
+          name: "铭雕·专业纹身店",
+          place: "[2店通用]【高端定制】60*60mm精致纹身",
+          price: "198",
+          counter_price: "门市价:3677元",
+          sold: "585"
+        },
+        {
+          id: 27,
+          img: "http://p0.meituan.net/200.0/dpdeal/5e4a1d594e904660ea8edfea6ac68e0e3238988.jpg",
+          name: "福灸堂艾灸推拿养生馆",
+          place: "[二府庄]9选1艾灸+推拿+头疗体验套餐",
+          price: "98",
+          counter_price: "门市价:128元",
+          sold: "803"
+        },
+        {
+          id: 28,
+          img: "https://p1.meituan.net/200.0/dpmerchantpic/c3c6b0631af6a5c1d4cc32a2652c985c108844.jpg",
+          name: "依依专业脱毛连锁机构",
+          place: "[西安等]单人双腋下脱毛",
+          price: "2",
+          counter_price: "门市价:400元",
+          sold: "6118"
+        },
+        {
+          id: 29,
+          img: "http://p0.meituan.net/200.0/deal/c6db2cb3359fa6313dc5a5c979362ea469968.jpg@133_0_533_533a%7C267h_267w_2e_90Q",
+          name: "抚小鲜蒸汽石锅鱼",
+          place: "[5店通用]100元代金券1张，可叠加",
+          price: "95",
+          counter_price: "门市价:100元",
+          sold: "51361"
+        },
+        {
+          id: 30,
+          img: "http://p0.meituan.net/200.0/dpdeal/4c770e6d0a65436603754a92337dc24d157729.jpg",
+          name: "Best形象照完美证件照",
+          place: "[省体育场]个人形象照",
+          price: "118",
+          counter_price: "品牌新用户减4.99元",
+          sold: "2135",
+          type: "orange"
         }
       ]
     }
@@ -1479,5 +1598,38 @@ export default {
       }
     }
   }
+}
+.guess_you_like {
+  width: 100%;
+  margin: 11px 0 0 0;
+  background: #fff;
+  padding: 0 0 0 10px;
+  .title {
+    width: 100%;
+    height: 42px;
+    border-bottom: 1px solid #DDD8CE;
+    display: flex;
+    .left {
+      flex: 1;
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 44px; 
+      color: #999;
+    }
+    .right {
+      font-size: 17px;
+      font-weight: 400;
+      line-height: 44px;
+      margin: 0 9px 0 0; 
+      color: #999;
+    }
+  }
+}
+.current_position {
+  padding: 13px 9px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #fe8c00;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 </style>
