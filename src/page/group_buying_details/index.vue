@@ -193,7 +193,7 @@
       </div>
     </div>
     <div class="concrete_evaluation">
-      <div class="title">
+      <div class="title" id="concrete_evaluation_title">
         <span>评价</span>
         <div class="stars">
           <i 
@@ -333,6 +333,12 @@
     </div>
     <div class="current_position">当前位置：{{selected_city}}团购 > {{product_name}}团购</div>
     <Footer></Footer>
+    <div
+      :class="{ 
+        hide_back_to_top:!show_back_to_top,
+        back_to_top:show_back_to_top
+      }"
+    ></div>
   </div>
 </template>
 
@@ -658,7 +664,8 @@ export default {
           sold: "2135",
           type: "orange"
         }
-      ]
+      ],
+      show_back_to_top: false
     }
   },
   computed: {
@@ -666,9 +673,28 @@ export default {
       return this.$store.state.SelectedCity
     }
   },
+  mounted() {
+    // this.swiper.slideTo(1, 0, false)
+    window.addEventListener('scroll', this.set_back_to_top)
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.set_back_to_top)
+  },
   methods: {
     route_to(e) {
       this.$router.push({path: e})
+    },
+    set_back_to_top() {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+      let offsetTop = document.querySelector("#concrete_evaluation_title").offsetTop;
+      if (scrollTop > offsetTop) {
+        this.show_back_to_top = true;
+      } else {
+        this.show_back_to_top = false;
+      };
+      console.log(scrollTop)
+      console.log(offsetTop)
+      console.log(this.show_back_to_top)
     }
   },
   created(){
@@ -1631,5 +1657,18 @@ export default {
   font-weight: 400;
   color: #fe8c00;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.hide_back_to_top {
+  display: none;
+}
+.back_to_top {
+  display: block;
+  width: 43px;
+  height: 43px;
+  background-image: url(http://s1.meituan.net/bs/file/?f=meis/meishi.mobile:assets/cbcd00b445480e50.png@da8f38f);
+  position: fixed;
+  background-size: 43px;
+  bottom: 75px;
+  right: 14px;
 }
 </style>
