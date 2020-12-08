@@ -116,8 +116,8 @@
       </div>
     </div>
     <div class="business_info">
-      <div class="top">商家信息</div>
-      <div class="bottom">
+      <div class="top" id="business_info_top">商家信息</div>
+      <div class="bottom" id="business_info_bottom">
         <div class="left">
           <div class="name">鑫海汇海鲜烤肉火锅自助（立丰国际店）</div>
           <div class="position">碑林区金花南路6号立丰国际购物广场6层</div>
@@ -337,7 +337,8 @@
       :class="{ 
         hide_back_to_top:!show_back_to_top,
         back_to_top:show_back_to_top
-      }"
+      }" 
+      @click="back_to_top"
     ></div>
   </div>
 </template>
@@ -686,7 +687,7 @@ export default {
     },
     set_back_to_top() {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
-      let offsetTop = document.querySelector("#concrete_evaluation_title").offsetTop;
+      let offsetTop = document.querySelector("#business_info_bottom").offsetTop + 60;
       if (scrollTop > offsetTop) {
         this.show_back_to_top = true;
       } else {
@@ -695,13 +696,19 @@ export default {
       console.log(scrollTop)
       console.log(offsetTop)
       console.log(this.show_back_to_top)
+    },
+    back_to_top() {
+    window.scrollTo({
+      'top': 0,
+      // 'behavior': 'smooth'
+    });
     }
   },
   created(){
-    // window.scrollTo({
-    //   'top': 0,
-    //   // 'behavior': 'smooth'
-    // });
+    window.scrollTo({
+      'top': 0,
+      // 'behavior': 'smooth'
+    });
     //进入题目页面，开始计时
     // this.$store.commit('REMBER_TIME');
   },
