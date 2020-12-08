@@ -24,6 +24,10 @@ export default [{
   path: '/group_buying_details',
   component: r => require.ensure([], () => r(require('../page/group_buying_details')), 'group_buying_details')
 },
+{
+  path: '/submit_order',
+  component: r => require.ensure([], () => r(require('../page/submit_order')), 'submit_order')
+},
 // {
 //   path: '/search',
 //   component: r => require.ensure([], () => r(require('../page/search')), 'search')

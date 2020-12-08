@@ -44,7 +44,9 @@
         <div class="counter_price">门市价:86元</div>
       </div>
       <div class="right">
-        <div class="purchase">立即抢购</div>
+        <div class="purchase"
+          @click="route_to('submit_order')"
+        >立即抢购</div>
       </div>
     </div>
     <div class="price_and_purchase">
@@ -693,9 +695,9 @@ export default {
       } else {
         this.show_back_to_top = false;
       };
-      console.log(scrollTop)
-      console.log(offsetTop)
-      console.log(this.show_back_to_top)
+      // console.log(scrollTop)
+      // console.log(offsetTop)
+      // console.log(this.show_back_to_top)
     },
     back_to_top() {
     window.scrollTo({
