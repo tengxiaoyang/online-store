@@ -334,7 +334,7 @@
       ></GuessYouLike>
     </div>
     <div class="current_position">当前位置：{{selected_city}}团购 > {{product_name}}团购</div>
-    <Footer></Footer>
+    <FooterGreen></FooterGreen>
     <div
       :class="{ 
         hide_back_to_top:!show_back_to_top,
@@ -348,12 +348,12 @@
 <script>
 import AppBannerGreen from "../../component/AppBannerGreen";
 import GuessYouLike from "../../component/GuessYouLike";
-import Footer from "../../component/Footer";
+import FooterGreen from "../../component/FooterGreen";
 export default {
   components: {
     AppBannerGreen,
     GuessYouLike,
-    Footer
+    FooterGreen
   },
   name: 'group_buying_details',
   data() {
@@ -1664,7 +1664,7 @@ export default {
   padding: 13px 9px;
   font-size: 12px;
   font-weight: 400;
-  color: #fe8c00;
+  color: #06c1ae;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .hide_back_to_top {

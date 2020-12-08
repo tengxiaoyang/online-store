@@ -19,9 +19,9 @@
       <div class="quantity">
         <div class="left">数量：</div>
         <div class="right">
-          <button class="subtract"></button>
+          <button class="subtract">-</button>
           <input class="num" value="1" type="text">
-          <button class="add"></button>
+          <button class="add">+</button>
         </div>
       </div>
       <div class="total_price">
@@ -41,15 +41,15 @@
         <a href="https://i.meituan.com/account/login">登录</a>
       </div>
     </div>
-    <Footer></Footer>
+    <FooterGreen></FooterGreen>
   </div>
 </template>
 
 <script>
-import Footer from "../../component/Footer";
+import FooterGreen from "../../component/FooterGreen";
 export default {
   components: {
-    Footer
+    FooterGreen
   },
   name: 'submit_order',
   data() {
@@ -73,7 +73,7 @@ export default {
 <style lang="less" scoped>
 .submit_order {
   background: #f0f0f0;
-  height: 100%;
+  height: 100vh;
 }
 .header {
   width: 100%;
@@ -124,7 +124,7 @@ export default {
   }
 }
 .content {
-  min-height: 535px;
+  min-height: 550px;
   .title {
     font-size: 17px;
     font-weight: 400;
@@ -134,7 +134,7 @@ export default {
   }
   .unit_price {
     width: 100%;
-    height: 43px;
+    height: 44px;
     background: #fff;
     font-size: 15px;
     font-weight: 600;
@@ -146,6 +146,136 @@ export default {
     }
     .right {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+  }
+  .quantity {
+    width: 100%;
+    height: 44px;
+    background: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 43px;
+    padding: 0 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 1px 0;
+    .left {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .right {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      .subtract {
+        width: 30px;
+        height: 30px;
+        line-height: 29px;
+        font-size: 19px;
+        font-weight: 800;
+        background: #dcdcdc;
+        color: #999;
+        border-radius: 3px;
+        vertical-align: middle;
+        font-family: CourierNewPSMT, Verdana;
+      }
+      .add {
+        width: 30px;
+        height: 30px;
+        line-height: 29px;
+        font-size: 26px;
+        font-weight: 400;
+        background: #dcdcdc;
+        color: #999;
+        border-radius: 3px;
+        vertical-align: middle;
+        font-family: CourierNewPSMT, 'Times New Roman';
+        padding: 1px 0 0 0;
+      }
+      .num {
+        width: 61px;
+        height: 30px;
+        vertical-align: middle;
+        border: 1px solid #ddd8ce;
+        border-radius: 3px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 15px;
+        font-weight: 500;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        padding: 1px 0 0 0;
+      }
+    }
+  }
+  .total_price {
+    width: 100%;
+    height: 44px;
+    background: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 43px;
+    padding: 0 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    .left {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .right {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      color: #f89b22;
+    }
+  }
+  .voucher {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 43px;
+    padding: 0 10px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 12px 0 0 0;
+    .left {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .right {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      span {
+        font-weight: 400;
+        color: #999;
+      }
+      .arrow {
+        position: relative;
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-left: 3px solid #999;
+        border-bottom: 3px solid #999;
+        transform: scaleY(0.7) rotateZ(-135deg);
+        margin: 0 0 0 -3px;
+      }
+    }
+  }
+  .submit_button {
+    background-color: #dcdcdc;
+    color: #999;
+    border: 0;
+    display: block;
+    width: calc(100% - 20px);
+    height: 47px;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 14px 10px 13px;
+  }
+  .please_log_in {
+    height: 20px;
+    display: flex;
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0 0 0 10px;
+    }
+    a {
+      font-size: 14px;
+      font-weight: 400;
+      color: #06c1ae;
+      margin: 0 0 0 5px;
     }
   }
 }
