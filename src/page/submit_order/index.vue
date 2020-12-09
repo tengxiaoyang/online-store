@@ -1,7 +1,7 @@
 <template>
   <div class="submit_order">
     <div class="header">
-      <div class="left" @click="route_to('/')">
+      <div class="left" @click="route_to('group_buying_details')">
         <div class="arrow"></div>
       </div>
       <div class="search_box">
