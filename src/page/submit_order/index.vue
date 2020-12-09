@@ -57,6 +57,11 @@ export default {
       name: 'helloworld vue'
     }
   },
+  methods: {
+    route_to(e) {
+      this.$router.push({path: e})
+    }
+  },
   created(){
     //进入题目页面，开始计时
     // this.$store.commit('REMBER_TIME');
