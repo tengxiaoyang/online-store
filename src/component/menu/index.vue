@@ -20,70 +20,70 @@ export default {
       icon_content: [
         {
           id: 1,
-          img: require("../../../public/static/img/delicious.png"),
+          img: require("../../../src/static/img/delicious.png"),
           img_style: "width: 68%; height: 68%;",
           style: "background: #fd9d21;",
           name: "美食"
         },
         {
           id: 2,
-          img: require("../../../public/static/img/cat_eye.png"),
+          img: require("../../../src/static/img/cat_eye.png"),
           img_style: "width: 100%; height: 100%;",
           style: "background: #ff6767;",
           name: "猫眼电影"
         },
         {
           id: 3,
-          img: require("../../../public/static/img/hotel.png"),
+          img: require("../../../src/static/img/hotel.png"),
           img_style: "width: 73%; height: 73%;",
           style: "background: #8a90fa;",
           name: "酒店"
         },
         {
           id: 4,
-          img: require("../../../public/static/img/leisure.png"),
+          img: require("../../../src/static/img/leisure.png"),
           img_style: "width: 73%; height: 73%;",
           style: "background: #fed030;",
           name: "休闲娱乐"
         },
         {
           id: 5,
-          img: require("../../../public/static/img/takeaway.png"),
+          img: require("../../../src/static/img/takeaway.png"),
           img_style: "width: 62%; height: 62%;",
           style: "background: #fd9d21;",
           name: "外卖"
         },
         {
           id: 6,
-          img: require("../../../public/static/img/ktv.png"),
+          img: require("../../../src/static/img/ktv.png"),
           img_style: "width: 68%; height: 68%;",
           style: "background: #fed030;",
           name: "KTV"
         },
         {
           id: 7,
-          img: require("../../../public/static/img/tour_around.png"),
+          img: require("../../../src/static/img/tour_around.png"),
           img_style: "width: 67%; height: 67%;",
           style: "background: #4dc6ee;",
           name: "周边游"
         },
         {
           id: 8,
-          img: require("../../../public/static/img/beauty.png"),
+          img: require("../../../src/static/img/beauty.png"),
           img_style: "width: 58%; height: 58%;",
           style: "background: #ff80c2;",
           name: "丽人"
         },
         {
           id: 9,
-          img: require("../../../public/static/img/fast_food.png"),
+          img: require("../../../src/static/img/fast_food.png"),
           img_style: "width: 67%; height: 67%;",
           style: "background: #fd9d21;",
           name: "小吃快餐"
         },
         {
           id: 10,
-          img: require("../../../public/static/img/three_point.png"),
+          img: require("../../../src/static/img/three_point.png"),
           img_style: "width: 57%; height: 57%;",
           style: "background: #00d3be;",
           name: "全部分类"
